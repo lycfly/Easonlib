@@ -1,0 +1,123 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.5.6 (Oracle Corporation Java 1.8.0_291)
+[debug]       Load.loadUnit: plugins took 50.977064ms
+[debug]       Load.loadUnit: defsScala took 0.314312ms
+[debug] [Loading] Scanning directory /root/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /root/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 12.684099 ms
+[debug]           Load.resolveProject(global-plugins) took 25.70454ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /root/.sbt/1.0/plugins, plugins: List(<none>))) took 54.411246ms
+[debug] [Loading] Done in /root/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 137.980574ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.158416ms
+[debug]     Load.loadUnit(file:/root/.sbt/1.0/plugins/, ...) took 195.119485ms
+[debug]   Load.apply: load took 287.841091ms
+[debug]   Load.apply: resolveProjects took 3.903854ms
+[debug]   Load.apply: finalTransforms took 36.491518ms
+[debug]   Load.apply: config.delegates took 5.481453ms
+[debug]   Load.apply: Def.make(settings)... took 230.97437ms
+[debug]   Load.apply: structureIndex took 76.627811ms
+[debug]   Load.apply: mkStreams took 1.797286ms
+[info] loading global plugins from /root/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 1814.2996ms
+[debug]           Load.loadUnit: plugins took 9.114647ms
+[debug]           Load.loadUnit: defsScala took 0.00535ms
+[debug] [Loading] Scanning directory /mnt/mydata/Easonlib/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /mnt/mydata/Easonlib/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 3.141026 ms
+[debug]               Load.resolveProject(easonlib-build) took 1.708738ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id easonlib-build, base: /mnt/mydata/Easonlib/project, plugins: List(<none>))) took 5.663425ms
+[debug] [Loading] Done in /mnt/mydata/Easonlib/project, returning: (easonlib-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 8.632549ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.00888ms
+[debug]         Load.loadUnit(file:/mnt/mydata/Easonlib/project/, ...) took 19.032654ms
+[debug]       Load.apply: load took 20.696805ms
+[debug]       Load.apply: resolveProjects took 0.115394ms
+[debug]       Load.apply: finalTransforms took 5.043723ms
+[debug]       Load.apply: config.delegates took 0.305276ms
+[debug]       Load.apply: Def.make(settings)... took 45.793322ms
+[debug]       Load.apply: structureIndex took 16.362345ms
+[debug]       Load.apply: mkStreams took 0.00282ms
+[info] loading project definition from /mnt/mydata/Easonlib/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 280.178174ms
+[debug]     Load.loadUnit: defsScala took 0.0038ms
+[debug] [Loading] Scanning directory /mnt/mydata/Easonlib
+[debug]       Load.loadUnit: mkEval took 5.708137ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /mnt/mydata/Easonlib, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.380923 ms
+[info] loading settings for project easonlib from build.sbt ...
+[debug]         Load.resolveProject(easonlib) took 2.615216ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id easonlib, base: /mnt/mydata/Easonlib, plugins: List(<none>))) took 5.642783ms
+[debug] [Loading] Done in /mnt/mydata/Easonlib, returning: (easonlib)
+[debug]     Load.loadUnit: loadedProjectsRaw took 1396.347105ms
+[debug]     Load.loadUnit: cleanEvalClasses took 24.730054ms
+[debug]   Load.loadUnit(file:/mnt/mydata/Easonlib/, ...) took 1702.275485ms
+[debug] Load.apply: load took 1704.297225ms
+[debug] Load.apply: resolveProjects took 0.099424ms
+[debug] Load.apply: finalTransforms took 4.012899ms
+[debug] Load.apply: config.delegates took 0.237819ms
+[debug] Load.apply: Def.make(settings)... took 77.781253ms
+[debug] Load.apply: structureIndex took 12.186006ms
+[debug] Load.apply: mkStreams took 0.00377ms
+[info] set current project to Easonlib (in build file:/mnt/mydata/Easonlib/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///root/.sbt/1.0/server/9c419bf075639b47594a/sock
+[debug] Writing bsp connection file
+[info] started sbt server

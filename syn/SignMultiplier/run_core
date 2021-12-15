@@ -1,0 +1,8 @@
+#!/bin/sh
+log_date=test
+mkdir log
+mkdir outputs
+mkdir rpt
+mkdir outputs/$log_date
+mkdir rpt/$log_date
+dc_shell-t -f core.tcl -x "set date ${log_date}" | tee ./log/core_${log_date}.log

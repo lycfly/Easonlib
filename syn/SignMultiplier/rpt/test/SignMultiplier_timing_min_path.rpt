@@ -1,0 +1,428 @@
+ 
+****************************************
+Report : timing
+        -path full_clock_expanded
+        -delay min
+        -max_paths 50
+        -sort_by slack
+Design : SignMultiplier
+Version: L-2016.03-SP1
+Date   : Wed Dec 15 21:28:54 2021
+****************************************
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: io_dinA[0] (input port)
+  Endpoint: io_dout[1] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_dinA[0] (in)                          0.00       0.00 r
+  U3/ZN (INVD1BWP7T35P140)                 0.00       0.00 f
+  U4/ZN (INVD1BWP7T35P140)                 0.04       0.04 r
+  U168/ZN (AOI211D0BWP7T35P140)            0.04       0.08 f
+  U66/ZN (AOI221D4BWP7T35P140)             0.12       0.20 r
+  io_dout[1] (out)                         0.00       0.20 r
+  data arrival time                                   0.20
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_dinB[7] (input port)
+  Endpoint: io_dout[14]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_dinB[7] (in)                          0.00       0.00 r
+  U5/ZN (INVD1BWP7T35P140)                 0.00       0.00 f
+  U6/ZN (INVD1BWP7T35P140)                 0.05       0.04 r
+  U71/ZN (AOI22D1BWP7T35P140)              0.03       0.07 f
+  U173/ZN (AOI21D1BWP7T35P140)             0.04       0.11 r
+  U62/S (FA1OPTCD1BWP7T35P140)             0.06       0.17 r
+  U61/ZN (INVD2BWP7T35P140)                0.12       0.28 f
+  io_dout[14] (out)                        0.00       0.28 f
+  data arrival time                                   0.28
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_dinA[2] (input port)
+  Endpoint: io_dout[3] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_dinA[2] (in)                          0.00       0.00 r
+  U1/ZN (INVD1BWP7T35P140)                 0.00       0.00 f
+  U2/ZN (INVD1BWP7T35P140)                 0.04       0.03 r
+  U38/ZN (INVD1BWP7T35P140)                0.02       0.05 f
+  U87/ZN (ND3D1BWP7T35P140)                0.02       0.07 r
+  U36/Z (OA31D0BWP7T35P140)                0.05       0.12 r
+  U184/S (FA1D1BWP7T35P140)                0.05       0.17 r
+  U64/ZN (INVD2BWP7T35P140)                0.12       0.29 f
+  io_dout[3] (out)                         0.00       0.29 f
+  data arrival time                                   0.29
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_dinB[2] (input port)
+  Endpoint: io_dout[4] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_dinB[2] (in)                          0.00       0.00 r
+  U13/ZN (INVD1BWP7T35P140)                0.00       0.00 f
+  U14/ZN (INVD1BWP7T35P140)                0.06       0.06 r
+  U162/ZN (OAI22D1BWP7T35P140)             0.02       0.07 f
+  U163/Z (AO21D1BWP7T35P140)               0.03       0.10 f
+  U164/ZN (ND2D1BWP7T35P140)               0.02       0.12 r
+  U183/S (FA1D1BWP7T35P140)                0.05       0.17 r
+  U63/ZN (INVD2BWP7T35P140)                0.12       0.29 f
+  io_dout[4] (out)                         0.00       0.29 f
+  data arrival time                                   0.29
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_dinA[0] (input port)
+  Endpoint: io_dout[0] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  io_dinA[0] (in)                          0.00       0.00 f
+  U3/ZN (INVD1BWP7T35P140)                 0.12       0.12 r
+  U4/ZN (INVD1BWP7T35P140)                 0.03       0.15 f
+  U39/ZN (INVD1BWP7T35P140)                0.03       0.17 r
+  U67/ZN (NR2D2BWP7T35P140)                0.12       0.29 f
+  io_dout[0] (out)                         0.00       0.29 f
+  data arrival time                                   0.29
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_dinB[7] (input port)
+  Endpoint: io_dout[13]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_dinB[7] (in)                          0.00       0.00 r
+  U5/ZN (INVD1BWP7T35P140)                 0.00       0.00 f
+  U6/ZN (INVD1BWP7T35P140)                 0.05       0.04 r
+  U71/ZN (AOI22D1BWP7T35P140)              0.03       0.07 f
+  U73/ZN (OAI22D1BWP7T35P140)              0.06       0.13 r
+  U174/S (FA1D1BWP7T35P140)                0.06       0.19 r
+  U65/ZN (INVD2BWP7T35P140)                0.12       0.30 f
+  io_dout[13] (out)                        0.00       0.30 f
+  data arrival time                                   0.30
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_dinA[4] (input port)
+  Endpoint: io_dout[7] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_dinA[4] (in)                          0.00       0.00 r
+  U7/ZN (INVD1BWP7T35P140)                 0.00       0.00 f
+  U8/ZN (INVD1BWP7T35P140)                 0.05       0.04 r
+  U144/ZN (AOI221D1BWP7T35P140)            0.04       0.08 f
+  U147/ZN (ND2D1BWP7T35P140)               0.02       0.10 r
+  U148/CO (FA1D1BWP7T35P140)               0.05       0.15 r
+  U180/S (FA1D1BWP7T35P140)                0.05       0.20 r
+  U58/ZN (INVD2BWP7T35P140)                0.12       0.32 f
+  io_dout[7] (out)                         0.00       0.32 f
+  data arrival time                                   0.32
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_dinB[3] (input port)
+  Endpoint: io_dout[5] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_dinB[3] (in)                          0.00       0.00 r
+  U15/ZN (INVD1BWP7T35P140)                0.00       0.00 f
+  U16/ZN (INVD1BWP7T35P140)                0.06       0.06 r
+  U156/ZN (OAI22D1BWP7T35P140)             0.02       0.07 f
+  U157/ZN (AOI21D1BWP7T35P140)             0.03       0.10 r
+  U171/CO (FA1D1BWP7T35P140)               0.05       0.15 r
+  U182/S (FA1D1BWP7T35P140)                0.05       0.21 r
+  U59/ZN (INVD2BWP7T35P140)                0.12       0.32 f
+  io_dout[5] (out)                         0.00       0.32 f
+  data arrival time                                   0.32
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_dinA[4] (input port)
+  Endpoint: io_dout[6] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_dinA[4] (in)                          0.00       0.00 r
+  U7/ZN (INVD1BWP7T35P140)                 0.00       0.00 f
+  U8/ZN (INVD1BWP7T35P140)                 0.05       0.04 r
+  U144/ZN (AOI221D1BWP7T35P140)            0.04       0.08 f
+  U147/ZN (ND2D1BWP7T35P140)               0.02       0.10 r
+  U148/S (FA1D1BWP7T35P140)                0.06       0.16 r
+  U181/S (FA1D1BWP7T35P140)                0.05       0.22 r
+  U56/ZN (INVD2BWP7T35P140)                0.12       0.33 f
+  io_dout[6] (out)                         0.00       0.33 f
+  data arrival time                                   0.33
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_dinB[5] (input port)
+  Endpoint: io_dout[12]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_dinB[5] (in)                          0.00       0.00 r
+  U19/ZN (INVD1BWP7T35P140)                0.00       0.00 f
+  U20/ZN (INVD1BWP7T35P140)                0.06       0.05 r
+  U81/ZN (AOI22D1BWP7T35P140)              0.03       0.09 f
+  U86/ZN (AOI22D1BWP7T35P140)              0.03       0.11 r
+  U172/CO (FA1D1BWP7T35P140)               0.05       0.16 r
+  U175/S (FA1D1BWP7T35P140)                0.05       0.22 r
+  U60/ZN (INVD2BWP7T35P140)                0.12       0.33 f
+  io_dout[12] (out)                        0.00       0.33 f
+  data arrival time                                   0.33
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_dinA[6] (input port)
+  Endpoint: io_dout[8] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_dinA[6] (in)                          0.00       0.00 r
+  U9/ZN (INVD1BWP7T35P140)                 0.00       0.00 f
+  U10/ZN (INVD1BWP7T35P140)                0.05       0.04 r
+  U114/ZN (AOI221D1BWP7T35P140)            0.04       0.08 f
+  U132/ZN (OAI21D1BWP7T35P140)             0.03       0.11 r
+  U139/CO (FA1D1BWP7T35P140)               0.05       0.17 r
+  U179/S (FA1D1BWP7T35P140)                0.05       0.22 r
+  U55/ZN (INVD2BWP7T35P140)                0.12       0.34 f
+  io_dout[8] (out)                         0.00       0.34 f
+  data arrival time                                   0.34
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_dinB[6] (input port)
+  Endpoint: io_dout[11]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_dinB[6] (in)                          0.00       0.00 r
+  U21/ZN (INVD1BWP7T35P140)                0.00       0.00 f
+  U22/ZN (INVD1BWP7T35P140)                0.06       0.06 r
+  U78/ZN (AOI22D1BWP7T35P140)              0.03       0.09 f
+  U99/ZN (AOI22D1BWP7T35P140)              0.03       0.12 r
+  U104/CO (FA1D1BWP7T35P140)               0.05       0.17 r
+  U176/S (FA1D1BWP7T35P140)                0.05       0.22 r
+  U53/ZN (INVD2BWP7T35P140)                0.12       0.34 f
+  io_dout[11] (out)                        0.00       0.34 f
+  data arrival time                                   0.34
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_dinB[1] (input port)
+  Endpoint: io_dout[2] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_dinB[1] (in)                          0.00       0.00 r
+  U23/ZN (INVD1BWP7T35P140)                0.00       0.00 f
+  U24/ZN (INVD1BWP7T35P140)                0.06       0.06 r
+  U166/ZN (OAI22D1BWP7T35P140)             0.02       0.08 f
+  U167/Z (AO21D1BWP7T35P140)               0.03       0.10 f
+  U185/Z (OA21D1BWP7T35P140)               0.24       0.34 f
+  io_dout[2] (out)                         0.00       0.34 f
+  data arrival time                                   0.34
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_dinB[6] (input port)
+  Endpoint: io_dout[10]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_dinB[6] (in)                          0.00       0.00 r
+  U21/ZN (INVD1BWP7T35P140)                0.00       0.00 f
+  U22/ZN (INVD1BWP7T35P140)                0.06       0.06 r
+  U78/ZN (AOI22D1BWP7T35P140)              0.03       0.09 f
+  U99/ZN (AOI22D1BWP7T35P140)              0.03       0.12 r
+  U104/S (FA1D1BWP7T35P140)                0.06       0.18 r
+  U177/S (FA1D1BWP7T35P140)                0.05       0.23 r
+  U57/ZN (INVD2BWP7T35P140)                0.12       0.35 f
+  io_dout[10] (out)                        0.00       0.35 f
+  data arrival time                                   0.35
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_dinB[7] (input port)
+  Endpoint: io_dout[9] (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_dinB[7] (in)                          0.00       0.00 r
+  U5/ZN (INVD1BWP7T35P140)                 0.00       0.00 f
+  U6/ZN (INVD1BWP7T35P140)                 0.05       0.04 r
+  U68/ZN (INVD1BWP7T35P140)                0.03       0.07 f
+  U128/Z (AO21D1BWP7T35P140)               0.03       0.11 f
+  U129/ZN (AOI21D1BWP7T35P140)             0.03       0.14 r
+  U131/CO (FA1D1BWP7T35P140)               0.05       0.19 r
+  U178/S (FA1D1BWP7T35P140)                0.05       0.24 r
+  U54/ZN (INVD2BWP7T35P140)                0.12       0.36 f
+  io_dout[9] (out)                         0.00       0.36 f
+  data arrival time                                   0.36
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: io_dinB[7] (input port)
+  Endpoint: io_dout[15]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  io_dinB[7] (in)                          0.00       0.00 r
+  U5/ZN (INVD1BWP7T35P140)                 0.00       0.00 f
+  U6/ZN (INVD1BWP7T35P140)                 0.05       0.04 r
+  U68/ZN (INVD1BWP7T35P140)                0.03       0.07 f
+  U71/ZN (AOI22D1BWP7T35P140)              0.03       0.10 r
+  U173/ZN (AOI21D1BWP7T35P140)             0.02       0.12 f
+  U62/CO (FA1OPTCD1BWP7T35P140)            0.24       0.37 f
+  io_dout[15] (out)                        0.00       0.37 f
+  data arrival time                                   0.37
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,39 @@
+Information: Changed wire load model for 'DW02_mult' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for '*MULT_TC_OP_8_8_16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Updating design information... (UID-85)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Warning: The following end-points are not constrained for maximum delay.
+
+End point
+---------------
+io_dout[0]
+io_dout[1]
+io_dout[2]
+io_dout[3]
+io_dout[4]
+io_dout[5]
+io_dout[6]
+io_dout[7]
+io_dout[8]
+io_dout[9]
+io_dout[10]
+io_dout[11]
+io_dout[12]
+io_dout[13]
+io_dout[14]
+io_dout[15]
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1

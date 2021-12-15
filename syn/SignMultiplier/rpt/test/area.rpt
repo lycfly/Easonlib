@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : SignMultiplier
+Version: L-2016.03-SP1
+Date   : Wed Dec 15 21:28:54 2021
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs (File: /root/lib/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db)
+
+Number of ports:                           32
+Number of nets:                           229
+Number of cells:                          187
+Number of combinational cells:            187
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         68
+Number of references:                      22
+
+Combinational area:                103.292001
+Buf/Inv area:                       14.504000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   103.292001
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+SignMultiplier                     103.2920    100.0  103.2920     0.0000  0.0000  SignMultiplier
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                 103.2920     0.0000  0.0000
+
+1

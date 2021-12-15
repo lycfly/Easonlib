@@ -1,0 +1,61 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : SignMultiplier
+Version: L-2016.03-SP1
+Date   : Wed Dec 15 21:28:54 2021
+****************************************
+
+
+   max_transition
+
+                             Required        Actual
+   Net                      Transition     Transition        Slack
+   -----------------------------------------------------------------
+   io_dinA[0]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U3/I             0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[1]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U11/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[2]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U1/I             0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[3]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U31/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[4]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U7/I             0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[5]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U29/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[6]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U9/I             0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[7]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U25/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[0]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U27/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[1]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U23/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[2]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U13/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[3]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U15/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[4]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U17/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[5]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U19/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[6]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U21/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[7]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U5/I             0.44           1.00          -0.56  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      16                 -8.96  
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   SignMultiplier               0.00        2528.93       -2528.93  (VIOLATED)
+
+
+1
