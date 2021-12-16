@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : clock_gating
+        -gated
+        -verbose
+Design : Booth2SmallArea
+Version: L-2016.03-SP1
+Date   : Thu Dec 16 23:55:47 2021
+****************************************
+
+
+--------------------------------------------------------------------------------
+                             Gated Register Report
+--------------------------------------------------------------------------------
+            Clock Gating Bank                    |         Gated Register 
+--------------------------------------------------------------------------------
+                                                 |
+ clk_gate_cal_cnt_reg                            |       cal_cnt_reg_0_
+                                                 |       cal_cnt_reg_1_
+                                                 |       cal_cnt_reg_2_
+                                                 |       shiftReg_reg_7_
+                                                 |       shiftReg_reg_6_
+                                                 |       shiftReg_reg_5_
+                                                 |       shiftReg_reg_4_
+                                                 |       shiftReg_reg_3_
+                                                 |       shiftReg_reg_2_
+                                                 |       shiftReg_reg_1_
+                                                 |       shiftReg_reg_8_
+                                                 |       shiftReg_reg_16_
+                                                 |
+ clk_gate_shiftReg_reg                           |       shiftReg_reg_0_
+                                                 |       shiftReg_reg_9_
+                                                 |       shiftReg_reg_10_
+                                                 |       shiftReg_reg_11_
+                                                 |       shiftReg_reg_12_
+                                                 |       shiftReg_reg_13_
+                                                 |       shiftReg_reg_14_
+                                                 |       shiftReg_reg_15_
+                                                 |
+--------------------------------------------------------------------------------
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |        2         |
+          |                                       |                  |
+          |    Number of Gated registers          |    20 (90.91%)   |
+          |                                       |                  |
+          |    Number of Ungated registers        |     2 (9.09%)    |
+          |                                       |                  |
+          |    Total number of registers          |       22         |
+          ------------------------------------------------------------
+
+
+
+1

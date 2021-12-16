@@ -3,7 +3,7 @@
 Report : reference
 Design : SignMultiplier
 Version: L-2016.03-SP1
-Date   : Wed Dec 15 21:28:54 2021
+Date   : Thu Dec 16 23:57:58 2021
 ****************************************
 
 Attributes:
@@ -32,19 +32,13 @@ AOI211D0BWP7T35P140
                                   0.490000       2      0.980000  
 AOI221D1BWP7T35P140
                    tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
-                                  0.686000       3      2.058000  
-AOI221D4BWP7T35P140
-                   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
-                                  1.176000       1      1.176000  
+                                  0.686000       4      2.744000  
+DFCNQD1BWP7T35P140 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  1.862000      17     31.654000  n
 FA1D1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
-                                  1.666000      25     41.650000  r
-FA1OPTCD1BWP7T35P140
-                   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
-                                  1.960000       1      1.960000  r
+                                  1.666000      26     43.316000  r
 INVD1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
-                                  0.196000      56     10.976000  
-INVD2BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
-                                  0.294000      12      3.528000  
+                                  0.196000      70     13.720000  
 MAOI22D1BWP7T35P140
                    tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
                                   0.588000       3      1.764000  
@@ -53,13 +47,9 @@ ND2D1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
 ND3D1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
                                   0.392000       1      0.392000  
 NR2D1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
-                                  0.294000       3      0.882000  
-NR2D2BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
-                                  0.490000       1      0.490000  
+                                  0.294000       4      1.176000  
 OA21D0BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
-                                  0.490000       1      0.490000  
-OA21D1BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
-                                  0.490000       1      0.490000  
+                                  0.490000       2      0.980000  
 OA31D0BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
                                   0.588000       2      1.176000  
 OAI21D1BWP7T35P140 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
@@ -69,6 +59,10 @@ OAI22D1BWP7T35P140 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
 OAI221D0BWP7T35P140
                    tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
                                   0.686000       1      0.686000  
+SNPS_CLOCK_GATE_HIGH_SignMultiplier
+                                  1.470000       1      1.470000  b, h
+TIELBWP7T35P140    tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.196000       1      0.196000  
 -----------------------------------------------------------------------------
-Total 22 references                                   103.292001
+Total 20 references                                   134.848000
 1

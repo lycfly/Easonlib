@@ -1,0 +1,57 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+        -verbose
+Design : Booth2SmallArea
+Version: L-2016.03-SP1
+Date   : Thu Dec 16 23:55:47 2021
+****************************************
+
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs (File: /root/lib/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Booth2SmallArea        ZeroWireload      tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+SNPS_CLOCK_GATE_HIGH_Booth2SmallArea_0
+                       ZeroWireload      tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+SNPS_CLOCK_GATE_HIGH_Booth2SmallArea_1
+                       ZeroWireload      tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+
+Global Operating Voltage = 0.81 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   7.0346 uW   (74%)
+  Net Switching Power  =   2.5055 uW   (26%)
+                         ---------
+Total Dynamic Power    =   9.5401 uW  (100%)
+
+Cell Leakage Power     =   1.9256 uW
+
+                 Internal         Switching           Leakage            Total                         Cell
+Power Group      Power            Power               Power              Power   (   %    )  Attrs  Count
+---------------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+clock_network  1.2706e-03        2.9280e-04           80.7479        1.6441e-03  (  14.34%)            2
+register       5.1735e-03        1.7134e-03          877.0846        7.7639e-03  (  67.71%)            22
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+combinational  5.9053e-04        4.9935e-04          967.7166        2.0576e-03  (  17.95%)            104
+---------------------------------------------------------------------------------------------------------
+Total          7.0346e-03 mW     2.5055e-03 mW     1.9255e+03 nW     1.1466e-02 mW
+1

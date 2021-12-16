@@ -5,22 +5,29 @@ Report : clock_gating
         -verbose
 Design : SignMultiplier
 Version: L-2016.03-SP1
-Date   : Wed Dec 15 21:28:54 2021
+Date   : Thu Dec 16 23:57:59 2021
 ****************************************
 
 
- Information:  No Ungated Register Found 
+--------------------------------------------------------------------------------
+                             Ungated Register Report
+--------------------------------------------------------------------------------
+           Ungated Register     |  Reason                  |  What Next?
+--------------------------------------------------------------------------------
+    dout_vld_reg_reg            |  Always enabled register |  -
+                                |                          |
+--------------------------------------------------------------------------------
 
 
                              Clock Gating Summary
           ------------------------------------------------------------
-          |    Number of Clock gating elements    |        0         |
+          |    Number of Clock gating elements    |        1         |
           |                                       |                  |
-          |    Number of Gated registers          |     0 (0.00%)    |
+          |    Number of Gated registers          |    16 (94.12%)   |
           |                                       |                  |
-          |    Number of Ungated registers        |     0 (0.00%)    |
+          |    Number of Ungated registers        |     1 (5.88%)    |
           |                                       |                  |
-          |    Total number of registers          |        0         |
+          |    Total number of registers          |       17         |
           ------------------------------------------------------------
 
 

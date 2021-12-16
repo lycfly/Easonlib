@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : reference
+Design : Booth2SmallArea
+Version: L-2016.03-SP1
+Date   : Thu Dec 16 23:55:47 2021
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AN2D0BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.392000       1      0.392000  
+AO21D1BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.490000       2      0.980000  
+AOI22D1BWP7T35P140 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.490000       1      0.490000  
+AOI31D1BWP7T35P140 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.588000       1      0.588000  
+AOI211D0BWP7T35P140
+                   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.490000       7      3.430000  
+DFCND1BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  1.960000       1      1.960000  n
+DFCNQD1BWP7T35P140 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  1.862000      20     37.240000  n
+DFQD1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  1.666000       1      1.666000  n
+IND2D1BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.392000       1      0.392000  
+INR2D1BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.392000       3      1.176000  
+INR2D2BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.588000       1      0.588000  
+INVD1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.196000      33      6.468000  
+MAOI222D0BWP7T35P140
+                   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.686000       6      4.116000  
+MUX2D1BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.686000       7      4.802000  
+MUX2ND1BWP7T35P140 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.588000       8      4.704000  
+ND2D1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.294000       4      1.176000  
+NR2D1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.294000      17      4.998000  
+NR3D0BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.392000       1      0.392000  
+OA21D0BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.490000       1      0.490000  
+OA211D0BWP7T35P140 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.588000       1      0.588000  
+OAI21D1BWP7T35P140 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.490000       1      0.490000  
+SNPS_CLOCK_GATE_HIGH_Booth2SmallArea_0
+                                  1.470000       1      1.470000  b, h
+SNPS_CLOCK_GATE_HIGH_Booth2SmallArea_1
+                                  1.470000       1      1.470000  b, h
+TIELBWP7T35P140    tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.196000       1      0.196000  
+XNR2D0BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.686000       3      2.058000  
+XOR2D0BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.686000       5      3.430000  
+-----------------------------------------------------------------------------
+Total 26 references                                    85.750000
+1

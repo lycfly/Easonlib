@@ -7,12 +7,19 @@ class SignMultiplier (SIZEINA: Int, SIZEINB:Int) extends Component {
   val io = new Bundle {
     val dinA = in SInt (SIZEINA bits)
     val dinB = in SInt (SIZEINB bits)
+    val din_vld = in Bool()
 
     val dout = out SInt (SIZEINA + SIZEINB bits)
+    val dout_vld = out Bool()
 
   }
-
-  io.dout := io.dinA * io.dinB
+  val Result = Reg(SInt(SIZEINB+ SIZEINA bits)) init(0)
+  val dout_vld_reg = RegNext(io.din_vld) init(false)
+  when(io.din_vld){
+    Result :=   io.dinA * io.dinB
+  }
+  io.dout := Result
+  io.dout_vld := dout_vld_reg
 }
 object SignMultiplierInst {
   def main(args: Array[String]): Unit = {

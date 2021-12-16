@@ -8,16 +8,16 @@ Report : timing
         -transition_time
 Design : SignMultiplier
 Version: L-2016.03-SP1
-Date   : Wed Dec 15 21:28:54 2021
+Date   : Thu Dec 16 23:57:58 2021
 ****************************************
 
 Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
 Wire Load Model Mode: segmented
 
-  Startpoint: io_dinA[5] (input port)
-  Endpoint: io_dout[15]
-            (output port)
-  Path Group: (none)
+  Startpoint: io_dinA[5] (input port clocked by clk)
+  Endpoint: Result_reg_14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
   Path Type: max
 
   Des/Clust/Port     Wire Load Model       Library
@@ -32,51 +32,106 @@ Attributes:
     i - ideal_net or ideal_network
   inf - infeasible path
 
-  Point                        Fanout     Trans      Incr       Path      Attributes
-  ------------------------------------------------------------------------------------------
-  input external delay                               0.00       0.00 f
-  io_dinA[5] (in)                          1.00      0.00       0.00 f
-  io_dinA[5] (net)               1                   0.00       0.00 f
-  U29/ZN (INVD1BWP7T35P140)                0.15      0.12       0.12 r
-  n29 (net)                      1                   0.00       0.12 r
-  U30/ZN (INVD1BWP7T35P140)                0.07      0.06       0.18 f
-  n30 (net)                     11                   0.00       0.18 f
-  U51/ZN (INVD1BWP7T35P140)                0.06      0.06       0.23 r
-  n46 (net)                     11                   0.00       0.23 r
-  U69/ZN (AOI22D1BWP7T35P140)              0.11      0.06       0.30 f
-  n92 (net)                      8                   0.00       0.30 f
-  U70/ZN (INVD1BWP7T35P140)                0.05      0.05       0.35 r
-  n142 (net)                     5                   0.00       0.35 r
-  U37/ZN (OAI221D0BWP7T35P140)             0.09      0.07       0.42 f
-  n141 (net)                     3                   0.00       0.42 f
-  U80/ZN (INVD1BWP7T35P140)                0.04      0.05       0.47 r
-  n76 (net)                      6                   0.00       0.47 r
-  U125/ZN (AOI22D1BWP7T35P140)             0.07      0.04       0.51 f
-  n96 (net)                      1                   0.00       0.51 f
-  U138/S (FA1D1BWP7T35P140)                0.03      0.12       0.63 r
-  n98 (net)                      1                   0.00       0.63 r
-  U139/S (FA1D1BWP7T35P140)                0.03      0.09       0.72 f
-  n170 (net)                     1                   0.00       0.72 f
-  U180/CO (FA1D1BWP7T35P140)               0.02      0.07       0.79 f
-  n164 (net)                     1                   0.00       0.79 f
-  U179/CO (FA1D1BWP7T35P140)               0.02      0.06       0.84 f
-  n160 (net)                     1                   0.00       0.84 f
-  U178/CO (FA1D1BWP7T35P140)               0.02      0.06       0.90 f
-  n156 (net)                     1                   0.00       0.90 f
-  U177/CO (FA1D1BWP7T35P140)               0.03      0.06       0.95 f
-  n153 (net)                     1                   0.00       0.95 f
-  U176/CO (FA1D1BWP7T35P140)               0.02      0.07       1.02 f
-  n148 (net)                     1                   0.00       1.02 f
-  U175/CO (FA1D1BWP7T35P140)               0.02      0.06       1.07 f
-  n144 (net)                     1                   0.00       1.07 f
-  U174/CO (FA1D1BWP7T35P140)               0.03      0.06       1.13 f
-  n196 (net)                     1                   0.00       1.13 f
-  U62/CO (FA1OPTCD1BWP7T35P140)            0.39      0.27       1.40 f
-  io_dout[15] (net)              1                   0.00       1.40 f
-  io_dout[15] (out)                        0.39      0.00       1.40 f
-  data arrival time                                             1.40
-  ------------------------------------------------------------------------------------------
-  (Path is unconstrained)
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       2.00       2.00
+  input external delay                                              4.00       6.00 f
+  io_dinA[5] (in)                                         1.00      0.00       6.00 f
+  io_dinA[5] (net)                              1                   0.00       6.00 f
+  U34/ZN (INVD1BWP7T35P140)                               0.15      0.12       6.12 r
+  n31 (net)                                     1                   0.00       6.12 r
+  U35/ZN (INVD1BWP7T35P140)                               0.07      0.06       6.18 f
+  n32 (net)                                    11                   0.00       6.18 f
+  U51/ZN (INVD1BWP7T35P140)                               0.06      0.06       6.23 r
+  n48 (net)                                    11                   0.00       6.23 r
+  U82/ZN (AOI22D1BWP7T35P140)                             0.11      0.06       6.30 f
+  n140 (net)                                    8                   0.00       6.30 f
+  U83/ZN (INVD1BWP7T35P140)                               0.05      0.05       6.35 r
+  n74 (net)                                     5                   0.00       6.35 r
+  U85/ZN (OAI221D0BWP7T35P140)                            0.09      0.07       6.42 f
+  n59 (net)                                     3                   0.00       6.42 f
+  U102/ZN (INVD1BWP7T35P140)                              0.04      0.05       6.47 r
+  n138 (net)                                    6                   0.00       6.47 r
+  U140/ZN (AOI22D1BWP7T35P140)                            0.07      0.04       6.51 f
+  n101 (net)                                    1                   0.00       6.51 f
+  U153/S (FA1D1BWP7T35P140)                               0.03      0.12       6.63 r
+  n103 (net)                                    1                   0.00       6.63 r
+  U154/S (FA1D1BWP7T35P140)                               0.03      0.08       6.72 f
+  intadd_0_A_4_ (net)                           1                   0.00       6.72 f
+  intadd_0_U9/CO (FA1D1BWP7T35P140)                       0.02      0.07       6.78 f    mo 
+  intadd_0_n8 (net)                             1                   0.00       6.78 f
+  intadd_0_U8/CO (FA1D1BWP7T35P140)                       0.02      0.06       6.84 f    mo 
+  intadd_0_n7 (net)                             1                   0.00       6.84 f
+  intadd_0_U7/CO (FA1D1BWP7T35P140)                       0.02      0.06       6.89 f    mo 
+  intadd_0_n6 (net)                             1                   0.00       6.89 f
+  intadd_0_U6/CO (FA1D1BWP7T35P140)                       0.02      0.06       6.95 f    mo 
+  intadd_0_n5 (net)                             1                   0.00       6.95 f
+  intadd_0_U5/CO (FA1D1BWP7T35P140)                       0.02      0.06       7.00 f    mo 
+  intadd_0_n4 (net)                             1                   0.00       7.00 f
+  intadd_0_U4/CO (FA1D1BWP7T35P140)                       0.02      0.06       7.06 f    mo 
+  intadd_0_n3 (net)                             1                   0.00       7.06 f
+  intadd_0_U3/CO (FA1D1BWP7T35P140)                       0.03      0.06       7.11 f    mo 
+  intadd_0_n2 (net)                             1                   0.00       7.11 f
+  intadd_0_U2/S (FA1D1BWP7T35P140)                        0.02      0.07       7.18 f    mo 
+  intadd_0_SUM_11_ (net)                        1                   0.00       7.18 f
+  U67/ZN (INVD1BWP7T35P140)                               0.01      0.01       7.19 r
+  N16 (net)                                     1                   0.00       7.19 r
+  Result_reg_14_/D (DFCNQD1BWP7T35P140)                   0.01      0.00       7.19 r
+  data arrival time                                                            7.19
+
+  clock clk (rise edge)                                            10.00      10.00
+  clock network delay (ideal)                                       2.00      12.00
+  clock uncertainty                                                -1.00      11.00
+  Result_reg_14_/CP (DFCNQD1BWP7T35P140)                            0.00      11.00 r
+  library setup time                                               -0.03      10.97
+  data required time                                                          10.97
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                          10.97
+  data arrival time                                                           -7.19
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  3.78
+
+
+  Startpoint: Result_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[0] (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_SignMultiplier ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SignMultiplier     ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       2.00       2.00
+  Result_reg_0_/CP (DFCNQD1BWP7T35P140)                   1.00      0.00       2.00 r
+  Result_reg_0_/Q (DFCNQD1BWP7T35P140)                    0.42      0.36       2.36 r
+  io_dout[0] (net)                              1                   0.00       2.36 r
+  io_dout[0] (out)                                        0.42      0.00       2.36 r
+  data arrival time                                                            2.36
+
+  clock clk (rise edge)                                            10.00      10.00
+  clock network delay (ideal)                                       2.00      12.00
+  clock uncertainty                                                -1.00      11.00
+  output external delay                                            -6.00       5.00
+  data required time                                                           5.00
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           5.00
+  data arrival time                                                           -2.36
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  2.64
 
 
 1

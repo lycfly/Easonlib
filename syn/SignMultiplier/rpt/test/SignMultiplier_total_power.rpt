@@ -5,7 +5,7 @@ Report : power
         -verbose
 Design : SignMultiplier
 Version: L-2016.03-SP1
-Date   : Wed Dec 15 21:28:54 2021
+Date   : Thu Dec 16 23:57:58 2021
 ****************************************
 
 
@@ -20,6 +20,8 @@ Wire Load Model Mode: segmented
 Design        Wire Load Model            Library
 ------------------------------------------------
 SignMultiplier         ZeroWireload      tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+SNPS_CLOCK_GATE_HIGH_SignMultiplier
+                       ZeroWireload      tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
 
 
 Global Operating Voltage = 0.81 
@@ -31,24 +33,23 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =  28.8269 uW   (21%)
-  Net Switching Power  = 109.7253 uW   (79%)
+  Cell Internal Power  =   8.9336 uW   (64%)
+  Net Switching Power  =   4.9299 uW   (36%)
                          ---------
-Total Dynamic Power    = 138.5522 uW  (100%)
+Total Dynamic Power    =  13.8636 uW  (100%)
 
-Cell Leakage Power     =   2.2365 uW
+Cell Leakage Power     =   2.8673 uW
 
-Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
                  Internal         Switching           Leakage            Total                         Cell
 Power Group      Power            Power               Power              Power   (   %    )  Attrs  Count
 ---------------------------------------------------------------------------------------------------------
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
-clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
-register           0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+clock_network  7.3165e-04        3.1816e-04           40.7524        1.0906e-03  (   6.52%)            1
+register       5.4184e-03        2.6542e-03          717.9942        8.7906e-03  (  52.54%)            17
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
-combinational  2.8827e-02            0.1097        2.2365e+03            0.1408  ( 100.00%)            187
+combinational  2.7836e-03        1.9575e-03        2.1086e+03        6.8497e-03  (  40.94%)            189
 ---------------------------------------------------------------------------------------------------------
-Total          2.8827e-02 mW         0.1097 mW     2.2365e+03 nW         0.1408 mW
+Total          8.9336e-03 mW     4.9299e-03 mW     2.8673e+03 nW     1.6731e-02 mW
 1

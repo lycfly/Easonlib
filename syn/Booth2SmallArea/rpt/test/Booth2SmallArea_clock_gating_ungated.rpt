@@ -1,0 +1,36 @@
+ 
+****************************************
+Report : clock_gating
+        -ungated
+        -verbose
+Design : Booth2SmallArea
+Version: L-2016.03-SP1
+Date   : Thu Dec 16 23:55:47 2021
+****************************************
+
+
+--------------------------------------------------------------------------------
+                             Ungated Register Report
+--------------------------------------------------------------------------------
+           Ungated Register     |  Reason                  |  What Next?
+--------------------------------------------------------------------------------
+    cal_en_reg                  |  Min bitwidth not met    |  -
+    cal_en_regNext_reg          |  Always enabled register |  -
+                                |                          |
+--------------------------------------------------------------------------------
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |        2         |
+          |                                       |                  |
+          |    Number of Gated registers          |    20 (90.91%)   |
+          |                                       |                  |
+          |    Number of Ungated registers        |     2 (9.09%)    |
+          |                                       |                  |
+          |    Total number of registers          |       22         |
+          ------------------------------------------------------------
+
+
+
+1

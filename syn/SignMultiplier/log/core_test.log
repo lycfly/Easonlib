@@ -78,7 +78,17 @@ Loading db file '/usr/synopsys/dc-L-2016.03-SP1/libraries/syn/standard.sldb'
   Loading link library 'tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs'
   Loading link library 'gtech'
 Running PRESTO HDLC
-Warning:  /mnt/mydata/Easonlib/syn/SignMultiplier/SignMultiplier.v:13: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/mydata/Easonlib/syn/SignMultiplier/SignMultiplier.v:29: signed to unsigned assignment occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine SignMultiplier line 22 in file
+		'/mnt/mydata/Easonlib/syn/SignMultiplier/SignMultiplier.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  dout_vld_reg_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     Result_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
 Presto compilation completed successfully.
 Elaborated 1 design.
 Current design is now 'SignMultiplier'.
@@ -114,45 +124,28 @@ set     MAX_TRAN                        2.0
 set     PERIOD                          10
 10
 set ALL_IN_EX_CLK       [remove_from_collection [all_inputs] [get_ports clk]]
-Warning: Can't find port 'clk' in design 'SignMultiplier'. (UID-95)
-{io_dinA[7] io_dinA[6] io_dinA[5] io_dinA[4] io_dinA[3] io_dinA[2] io_dinA[1] io_dinA[0] io_dinB[7] io_dinB[6] io_dinB[5] io_dinB[4] io_dinB[3] io_dinB[2] io_dinB[1] io_dinB[0]}
+{io_dinA[7] io_dinA[6] io_dinA[5] io_dinA[4] io_dinA[3] io_dinA[2] io_dinA[1] io_dinA[0] io_dinB[7] io_dinB[6] io_dinB[5] io_dinB[4] io_dinB[3] io_dinB[2] io_dinB[1] io_dinB[0] io_din_vld resetn}
 set ALL_EX_OUT          [remove_from_collection [current_design] [all_outputs]]
 Current design is 'SignMultiplier'.
 {SignMultiplier}
 set ALL_EX_OUT_IN       [remove_from_collection $ALL_EX_OUT [all_inputs]]
 {SignMultiplier}
 create_clock [get_ports clk] -name clk -period $PERIOD -waveform [list 0 [expr $PERIOD * 0.5]]
-Warning: Can't find port 'clk' in design 'SignMultiplier'. (UID-95)
-Error: Value for list 'source_objects' must have 1 elements. (CMD-036)
-0
+1
 set_clock_uncertainty  -setup   1       [get_clocks clk]
-Warning: Can't find clock 'clk' in design 'SignMultiplier'. (UID-95)
-Error: Value for list 'object_list' must have 1 elements. (CMD-036)
-0
+1
 set_clock_uncertainty  -hold    1        [get_clocks clk]
-Warning: Can't find clock 'clk' in design 'SignMultiplier'. (UID-95)
-Error: Value for list 'object_list' must have 1 elements. (CMD-036)
-0
+1
 set_clock_transition            1          [get_clocks clk]
-Warning: Can't find clock 'clk' in design 'SignMultiplier'. (UID-95)
-Error: Value for list 'clock_list' must have 1 elements. (CMD-036)
-0
+1
 set_clock_latency      -source 	$CLK_SOURCE_LATENCY 	   [get_clocks clk]
-Warning: Can't find clock 'clk' in design 'SignMultiplier'. (UID-95)
-Error: Value for list 'object_list' must have 1 elements. (CMD-036)
-0
+1
 set_clock_latency            	  $CLK_NETWORK_LATENCY 	   [get_clocks clk]
-Warning: Can't find clock 'clk' in design 'SignMultiplier'. (UID-95)
-Error: Value for list 'object_list' must have 1 elements. (CMD-036)
-0
+1
 set_input_delay   [expr $PERIOD * 0.4]    -clock   clk   $ALL_IN_EX_CLK  -add_delay
-Warning: Can't find clock 'clk' in design 'SignMultiplier'. (UID-95)
-Error: Value for list '-clock' must have 1 elements. (CMD-036)
-0
+1
 set_output_delay  [expr $PERIOD * 0.6]    -clock   clk   [all_outputs]   -add_delay
-Warning: Can't find clock 'clk' in design 'SignMultiplier'. (UID-95)
-Error: Value for list '-clock' must have 1 elements. (CMD-036)
-0
+1
 set_input_transition   1.0   $ALL_IN_EX_CLK
 1
 set_load                        $OUT_LOAD [all_outputs]
@@ -166,19 +159,26 @@ set_max_capacitance             $MAX_CAP                 $ALL_EX_OUT_IN
 1
 report_clock
 Information: Checking out the license 'DesignWare'. (SEC-104)
-Information: Changed wire load model for 'alt1' from '(none)' to 'ZeroWireload'. (OPT-170)
-Information: Changed wire load model for 'apparch' from '(none)' to 'ZeroWireload'. (OPT-170)
 Information: Updating graph... (UID-83)
  
 ****************************************
 Report : clocks
 Design : SignMultiplier
 Version: L-2016.03-SP1
-Date   : Wed Dec 15 21:27:31 2021
+Date   : Thu Dec 16 23:57:41 2021
 ****************************************
 
-No clocks in this design.
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
 
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk             10.00   {0 5}                         {clk}
+--------------------------------------------------------------------------------
 1
 check_design > ./rpt/check_deisgn.rpt
 check_timing  > ./rpt/check_timing.rpt
@@ -211,27 +211,6 @@ Information: Checking no_input_delay...
 
 Information: Checking unconstrained_endpoints...
 
-Warning: The following end-points are not constrained for maximum delay.
-
-End point
----------------
-io_dout[0]
-io_dout[1]
-io_dout[2]
-io_dout[3]
-io_dout[4]
-io_dout[5]
-io_dout[6]
-io_dout[7]
-io_dout[8]
-io_dout[9]
-io_dout[10]
-io_dout[11]
-io_dout[12]
-io_dout[13]
-io_dout[14]
-io_dout[15]
-
 Information: Checking pulse_clock_cell_type...
 
 Information: Checking no_driving_cell...
@@ -252,8 +231,7 @@ compile_ultra -no_autoungroup  -no_boundary_optimization  -gate_clock
 Warning: The value of variable 'compile_preserve_subdesign_interfaces' has been changed to true because '-no_boundary_optimization' is used. (OPT-133)
 Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
 Information: Performing power optimization. (PWR-850)
-Analyzing: "/root/lib/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db"
-Library analysis succeeded.
+Alib files are up-to-date.
 Information: Evaluating DesignWare library utilization. (UISN-27)
 
 ============================================================================
@@ -264,6 +242,9 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
 ============================================================================
 
 Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
   Simplifying Design 'SignMultiplier'
 
 Loaded alib file './alib-52/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db.alib'
@@ -273,6 +254,8 @@ Information: State dependent leakage is now switched from on to off.
   ------------------------
   Processing 'SignMultiplier'
  Implement Synthetic for 'SignMultiplier'.
+  Processing 'SNPS_CLOCK_GATE_HIGH_SignMultiplier'
+  Mapping integrated clock gating circuitry
 Memory usage for J1 task 1328 Mbytes -- main task 1328 Mbytes.
 
   Updating timing information
@@ -280,8 +263,9 @@ Information: Updating design information... (UID-85)
 Information: The library cell 'TIELBWP7T35P140' in the library 'tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs' is not characterized for internal power. (PWR-536)
 Information: The library cell 'TIEHBWP7T35P140' in the library 'tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs' is not characterized for internal power. (PWR-536)
 Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
-Information: Skipping clock gating on design SignMultiplier, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_SignMultiplier, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design SignMultiplier_DW_mult_tc_J1_0, since there are no registers. (PWR-806)
+Information: Performing clock-gating on design SignMultiplier. (PWR-730)
 
   Beginning Mapping Optimizations  (Ultra High effort)
   -------------------------------
@@ -333,48 +317,48 @@ Information: Added key list 'DesignWare' to design 'SignMultiplier'. (DDB-72)
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:06      96.4      0.00       0.0      10.6                           2055.3711
-    0:00:06      96.4      0.00       0.0      10.6                           2055.3711
-    0:00:06      96.4      0.00       0.0      10.6                           2055.3711
-    0:00:06      96.4      0.00       0.0      10.6                           2055.3711
+    0:00:06     129.6      0.00       0.0      10.1                           2826.4414
+    0:00:06     129.6      0.00       0.0      10.1                           2826.4414
+    0:00:06     129.6      0.00       0.0      10.1                           2826.4414
+    0:00:06     129.6      0.00       0.0      10.1                           2826.4414
 
   Beginning WLM Backend Optimization
   --------------------------------------
-    0:00:06      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
+    0:00:06     129.1      0.00       0.0      10.1                           2802.8872
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
 
 
-  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  Beginning Design Rule Fixing  (max_transition)
   ----------------------------
 
                                   TOTAL                                                
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:07      95.8      0.00       0.0      10.6                           2024.9579
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
   Global Optimization (Phase 29)
   Global Optimization (Phase 30)
   Global Optimization (Phase 31)
-    0:00:07     104.3      0.00       0.0       9.0                           2317.4211
-    0:00:07     104.3      0.00       0.0       9.0                           2317.4211
+    0:00:07     134.8      0.00       0.0      10.1                           2899.1211
+    0:00:07     134.8      0.00       0.0      10.1                           2899.1211
 
 
   Beginning Leakage Power Optimization  (max_leakage_power 0)
@@ -384,7 +368,7 @@ Information: Added key list 'DesignWare' to design 'SignMultiplier'. (DDB-72)
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:07     104.3      0.00       0.0       9.0                           2317.4211
+    0:00:07     134.8      0.00       0.0      10.1                           2899.1211
   Global Optimization (Phase 32)
   Global Optimization (Phase 33)
   Global Optimization (Phase 34)
@@ -398,43 +382,42 @@ Information: Added key list 'DesignWare' to design 'SignMultiplier'. (DDB-72)
   Global Optimization (Phase 42)
   Global Optimization (Phase 43)
   Global Optimization (Phase 44)
-  Global Optimization (Phase 45)
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
 
                                   TOTAL                                                
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07      97.2      0.00       0.0       9.0                           2085.8821
-    0:00:07     103.3      0.00       0.0       9.0                           2239.5491
-    0:00:07     103.3      0.00       0.0       9.0                           2239.5491
-    0:00:07     103.3      0.00       0.0       9.0                           2239.5491
-    0:00:07     103.3      0.00       0.0       9.0                           2239.5491
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:08     134.8      0.00       0.0      10.1                           2899.1211
+    0:00:08     134.8      0.00       0.0      10.1                           2899.1211
+    0:00:08     134.8      0.00       0.0      10.1                           2899.1211
+    0:00:08     134.8      0.00       0.0      10.1                           2899.1211
 Loading db file '/root/lib/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db'
 
 
@@ -445,7 +428,6 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
   ---------------------
 Information: State dependent leakage is now switched from off to on.
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
-Warning: There is no defined clock in the design. (PWR-80)
 1
 #compile_ultra -timing_high_effort_script -no_autoungroup  -no_boundary_optimization
 #compile_ultra -timing_high_effort_script -no_autoungroup  -no_boundary_optimization -incremental
@@ -485,6 +467,6 @@ report_clock_gating -ungated -verbose                     > ./rpt/$date/${TOP_MO
 dc_shell> 
 Memory usage for main task 1328 Mbytes.
 Memory usage for this session 1328 Mbytes.
-CPU usage for this session 74 seconds ( 0.02 hours ).
+CPU usage for this session 19 seconds ( 0.01 hours ).
 
 Thank you...

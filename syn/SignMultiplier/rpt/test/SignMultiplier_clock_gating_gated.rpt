@@ -5,22 +5,45 @@ Report : clock_gating
         -verbose
 Design : SignMultiplier
 Version: L-2016.03-SP1
-Date   : Wed Dec 15 21:28:54 2021
+Date   : Thu Dec 16 23:57:58 2021
 ****************************************
 
 
- Information:  No Gated Register Found
+--------------------------------------------------------------------------------
+                             Gated Register Report
+--------------------------------------------------------------------------------
+            Clock Gating Bank                    |         Gated Register 
+--------------------------------------------------------------------------------
+                                                 |
+ clk_gate_Result_reg                             |       Result_reg_0_
+                                                 |       Result_reg_1_
+                                                 |       Result_reg_2_
+                                                 |       Result_reg_3_
+                                                 |       Result_reg_4_
+                                                 |       Result_reg_5_
+                                                 |       Result_reg_6_
+                                                 |       Result_reg_7_
+                                                 |       Result_reg_8_
+                                                 |       Result_reg_9_
+                                                 |       Result_reg_10_
+                                                 |       Result_reg_11_
+                                                 |       Result_reg_12_
+                                                 |       Result_reg_15_
+                                                 |       Result_reg_13_
+                                                 |       Result_reg_14_
+                                                 |
+--------------------------------------------------------------------------------
 
 
                              Clock Gating Summary
           ------------------------------------------------------------
-          |    Number of Clock gating elements    |        0         |
+          |    Number of Clock gating elements    |        1         |
           |                                       |                  |
-          |    Number of Gated registers          |     0 (0.00%)    |
+          |    Number of Gated registers          |    16 (94.12%)   |
           |                                       |                  |
-          |    Number of Ungated registers        |     0 (0.00%)    |
+          |    Number of Ungated registers        |     1 (5.88%)    |
           |                                       |                  |
-          |    Total number of registers          |        0         |
+          |    Total number of registers          |       17         |
           ------------------------------------------------------------
 
 

@@ -10,27 +10,6 @@ Information: Checking no_input_delay...
 
 Information: Checking unconstrained_endpoints...
 
-Warning: The following end-points are not constrained for maximum delay.
-
-End point
----------------
-io_dout[0]
-io_dout[1]
-io_dout[2]
-io_dout[3]
-io_dout[4]
-io_dout[5]
-io_dout[6]
-io_dout[7]
-io_dout[8]
-io_dout[9]
-io_dout[10]
-io_dout[11]
-io_dout[12]
-io_dout[13]
-io_dout[14]
-io_dout[15]
-
 Information: Checking pulse_clock_cell_type...
 
 Information: Checking no_driving_cell...

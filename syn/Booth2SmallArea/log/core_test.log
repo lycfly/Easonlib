@@ -1,0 +1,492 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version L-2016.03-SP1 for linux64 - Apr 18, 2016 
+
+                    Copyright (c) 1988 - 2016 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+set TOP_MODULE Booth2SmallArea
+Booth2SmallArea
+set compile_enable_register_merging    true
+true
+set compile_seqmap_propagate_constants true
+true
+set verilogout_no_tri   "true"
+true
+set verilogout_equation "false"
+false
+set mv_default_level_shifter_voltage_range_infinity true
+true
+source -e -v "dc_setup.tcl"
+#define_design_lib work -path ./elab
+history keep 500
+500
+set enable_page_mode false
+false
+set sh_enable_page_mode false
+false
+set compile_seqmap_identify_shift_registers false
+false
+set compile_seqmap_identify_shift_registers_with_synchronous_logic false
+false
+set timing_enable_multiple_clocks_per_reg true
+true
+set lib_path          "/root/lib"
+/root/lib
+set search_path       ". $lib_path"
+. /root/lib
+set target_library    "tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db                             "
+tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db                             
+set synthetic_library "dw_foundation.sldb"
+dw_foundation.sldb
+set link_library      " *                            $target_library                            $synthetic_library"
+ *                            tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db                                                         dw_foundation.sldb
+ *                            tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db                                                         dw_foundation.sldb
+set change_names_dont_change_bus_members      true
+true
+set compile_disable_hierarchical_inverter_opt true
+true
+set auto_insert_level_shifters_on_clocks      all
+all
+set auto_insert_level_shifters true
+true
+analyze -format verilog "/mnt/mydata/Easonlib/syn/Booth2SmallArea/Booth2SmallArea.v"  -define DC_SYN
+Running PRESTO HDLC
+Compiling source file /mnt/mydata/Easonlib/syn/Booth2SmallArea/Booth2SmallArea.v
+Presto compilation completed successfully.
+Loading db file '/root/lib/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db'
+Information: Using CCS timing libraries. (TIM-024)
+Loading db file '/usr/synopsys/dc-L-2016.03-SP1/libraries/syn/dw_foundation.sldb'
+1
+elaborate       $TOP_MODULE
+Loading db file '/usr/synopsys/dc-L-2016.03-SP1/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/dc-L-2016.03-SP1/libraries/syn/standard.sldb'
+  Loading link library 'tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  /mnt/mydata/Easonlib/syn/Booth2SmallArea/Booth2SmallArea.v:31: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 42 in file
+	'/mnt/mydata/Easonlib/syn/Booth2SmallArea/Booth2SmallArea.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            66            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine Booth2SmallArea line 42 in file
+		'/mnt/mydata/Easonlib/syn/Booth2SmallArea/Booth2SmallArea.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     cal_cnt_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    shiftReg_reg     | Flip-flop |  17   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     cal_en_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Booth2SmallArea line 79 in file
+		'/mnt/mydata/Easonlib/syn/Booth2SmallArea/Booth2SmallArea.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| cal_en_regNext_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'Booth2SmallArea'.
+1
+current_design  $TOP_MODULE
+Current design is 'Booth2SmallArea'.
+{Booth2SmallArea}
+link
+
+  Linking design 'Booth2SmallArea'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  Booth2SmallArea             /mnt/mydata/Easonlib/syn/Booth2SmallArea/Booth2SmallArea.db
+  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs (library) /root/lib/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db
+  dw_foundation.sldb (library) /usr/synopsys/dc-L-2016.03-SP1/libraries/syn/dw_foundation.sldb
+
+1
+source -e -v "constraint.tcl"
+set     CLK_SOURCE_LATENCY  		        1
+1
+set     CLK_SOURCE_LATENCY  		        1
+1
+set     CLK_NETWORK_LATENCY 		        1
+1
+set     OUT_LOAD                        0.05
+0.05
+set     MAX_FANOUT                      20
+20
+set     MAX_CAP                         0.4
+0.4
+set     MAX_TRAN                        2.0
+2.0
+set     PERIOD                          10
+10
+set ALL_IN_EX_CLK       [remove_from_collection [all_inputs] [get_ports clk]]
+{io_din_vld io_dinA[7] io_dinA[6] io_dinA[5] io_dinA[4] io_dinA[3] io_dinA[2] io_dinA[1] io_dinA[0] io_dinB[7] io_dinB[6] io_dinB[5] io_dinB[4] io_dinB[3] io_dinB[2] io_dinB[1] io_dinB[0] resetn}
+set ALL_EX_OUT          [remove_from_collection [current_design] [all_outputs]]
+Current design is 'Booth2SmallArea'.
+{Booth2SmallArea}
+set ALL_EX_OUT_IN       [remove_from_collection $ALL_EX_OUT [all_inputs]]
+{Booth2SmallArea}
+create_clock [get_ports clk] -name clk -period $PERIOD -waveform [list 0 [expr $PERIOD * 0.5]]
+1
+set_clock_uncertainty  -setup   1       [get_clocks clk]
+1
+set_clock_uncertainty  -hold    1        [get_clocks clk]
+1
+set_clock_transition            1          [get_clocks clk]
+1
+set_clock_latency      -source 	$CLK_SOURCE_LATENCY 	   [get_clocks clk]
+1
+set_clock_latency            	  $CLK_NETWORK_LATENCY 	   [get_clocks clk]
+1
+set_input_delay   [expr $PERIOD * 0.4]    -clock   clk   $ALL_IN_EX_CLK  -add_delay
+1
+set_output_delay  [expr $PERIOD * 0.6]    -clock   clk   [all_outputs]   -add_delay
+1
+set_input_transition   1.0   $ALL_IN_EX_CLK
+1
+set_load                        $OUT_LOAD [all_outputs]
+1
+set_max_transition              $MAX_TRAN                $ALL_EX_OUT_IN
+1
+set_max_fanout                  $MAX_FANOUT              $ALL_EX_OUT_IN
+1
+set_max_capacitance             $MAX_CAP                 $ALL_EX_OUT_IN
+1
+1
+report_clock
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : clocks
+Design : Booth2SmallArea
+Version: L-2016.03-SP1
+Date   : Thu Dec 16 23:55:30 2021
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk             10.00   {0 5}                         {clk}
+--------------------------------------------------------------------------------
+1
+check_design > ./rpt/check_deisgn.rpt
+check_timing  > ./rpt/check_timing.rpt
+set_clock_gating_style -setup 0.3 -hold 0 -pos integrated -neg integrated -max_fanout 32 -control_point before -control_signal scan_enable
+Warning: The setup and hold values overrides the library values for the integrated cells. (PWR-206)
+
+Current clock gating style....
+Sequential cell: latch
+Minimum bank bitwidth: 3
+Minimum bank bitwidth for enhanced clock gating: 6
+Maximum fanout: 32
+Setup time for clock gate: 0.300000
+Hold time for clock gate: 0.000000
+Clock gating circuitry (positive edge): integrated
+Clock gating circuitry (negative edge): integrated
+ Note: inverter between clock gating circuitry 
+       and (negative edge) register clock pin.
+Control point insertion: before
+Control signal for control point: scan_enable
+Observation point insertion: false
+Observation logic depth: 5
+1
+check_timing
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
+group_path -name INPUT_GROUP -from [all_inputs ]
+1
+group_path -name OUTPUT_GROUP -to  [all_outputs]
+1
+set upf_create_implicit_supply_sets false
+false
+set_fix_multiple_port_nets -all -buffer_constants
+1
+set_fix_multiple_port_nets -all -buffer_constants [all_designs]
+1
+compile_ultra -no_autoungroup  -no_boundary_optimization  -gate_clock
+Warning: The value of variable 'compile_preserve_subdesign_interfaces' has been changed to true because '-no_boundary_optimization' is used. (OPT-133)
+Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | L-2016.03-DWBB_201603.1 |     *     |
+| Licensed DW Building Blocks        | L-2016.03-DWBB_201603.1 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'Booth2SmallArea'
+
+Loaded alib file './alib-52/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'Booth2SmallArea'
+Information: Added key list 'DesignWare' to design 'Booth2SmallArea'. (DDB-72)
+ Implement Synthetic for 'Booth2SmallArea'.
+  Processing 'SNPS_CLOCK_GATE_HIGH_Booth2SmallArea_0'
+  Mapping integrated clock gating circuitry
+Memory usage for J1 task 1328 Mbytes -- main task 1328 Mbytes.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIELBWP7T35P140' in the library 'tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHBWP7T35P140' in the library 'tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Booth2SmallArea_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design Booth2SmallArea_DP_OP_14J1_122_8100_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_Booth2SmallArea_1, since there are no registers. (PWR-806)
+Information: Performing clock-gating on design Booth2SmallArea. (PWR-730)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:07      83.2      0.00       0.0      11.4                           2099.7190
+    0:00:07      83.2      0.00       0.0      11.4                           2099.7190
+    0:00:07      83.2      0.00       0.0      11.4                           2099.7190
+    0:00:07      83.1      0.00       0.0      11.4                           2105.4094
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:07      81.6      0.00       0.0      11.4                           1989.2086
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:07      81.6      0.00       0.0      11.4                           1960.5400
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+    0:00:07      85.4      0.00       0.0      10.1                           2047.4626
+    0:00:07      85.4      0.00       0.0      10.1                           2047.4626
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:07      85.4      0.00       0.0      10.1                           2047.4626
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:07      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:08      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:08      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:08      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:08      82.2      0.00       0.0      10.1                           1968.1506
+    0:00:08      85.7      0.00       0.0      10.1                           2057.3767
+    0:00:08      85.7      0.00       0.0      10.1                           2057.3767
+    0:00:08      85.7      0.00       0.0      10.1                           2057.3767
+    0:00:08      85.7      0.00       0.0      10.1                           2057.3767
+Loading db file '/root/lib/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+#compile_ultra -timing_high_effort_script -no_autoungroup  -no_boundary_optimization
+#compile_ultra -timing_high_effort_script -no_autoungroup  -no_boundary_optimization -incremental
+set verilogout_no_tri   "true"
+true
+set verilogout_equation "false"
+false
+change_names -hier -rules verilog
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+1
+write_sdc                                ./outputs/$date/${TOP_MODULE}.sdc
+1
+write -format ddc     -hierarchy -output ./outputs/$date/${TOP_MODULE}.ddc
+Writing ddc file './outputs/test/Booth2SmallArea.ddc'.
+1
+write -format verilog -hierarchy -output ./outputs/$date/${TOP_MODULE}.v
+Writing verilog file '/mnt/mydata/Easonlib/syn/Booth2SmallArea/outputs/test/Booth2SmallArea.v'.
+1
+write_link_library -out                  ./outputs/$date/link_library.txt
+1
+report_constraint -all_vio > ./rpt/$date/constrant.rpt
+report_area   -hier        > ./rpt/$date/area.rpt
+report_constraint  -all_violators                         > ./rpt/$date/${TOP_MODULE}_constraint_all_violators.rpt
+check_timing                                              > ./rpt/$date/${TOP_MODULE}_check_timing_final.rpt
+report_timing_requirements                                > ./rpt/$date/${TOP_MODULE}_report_timing_requirements.rpt
+report_timing -transition_time -nets -attributes -nosplit > ./rpt/$date/${TOP_MODULE}_mapped_timing.rpt
+report_area -physical -nosplit -hierarchy                 > ./rpt/$date/${TOP_MODULE}_mapped_area.rpt
+report_power                                              > ./rpt/$date/${TOP_MODULE}_power.rpt
+report_cell                                               > ./rpt/$date/${TOP_MODULE}_cell.rpt
+#report_timing  -delay max -max_paths 50                   > ./rpt/$date/${TOP_MODULE}_timing_max_path.rpt
+report_timing  -delay max -path_type full_clock_expanded -sort_by slack -max_paths 50 -nosplit                   > ./rpt/$date/${TOP_MODULE}_timing_max_path.rpt
+report_timing  -delay min -path_type full_clock_expanded -sort_by slack -max_paths 50 -nosplit                   > ./rpt/$date/${TOP_MODULE}_timing_min_path.rpt
+report_reference                                          > ./rpt/$date/${TOP_MODULE}_ref.rpt
+report_power -hierarchy -levels 3                         > ./rpt/$date/${TOP_MODULE}_hie_power.rpt
+report_power -verbose                                     > ./rpt/$date/${TOP_MODULE}_total_power.rpt
+report_clock_gating -gated -verbose                       > ./rpt/$date/${TOP_MODULE}_clock_gating_gated.rpt
+report_clock_gating -ungated -verbose                     > ./rpt/$date/${TOP_MODULE}_clock_gating_ungated.rpt
+dc_shell> 
+Memory usage for main task 1328 Mbytes.
+Memory usage for this session 1328 Mbytes.
+CPU usage for this session 18 seconds ( 0.01 hours ).
+
+Thank you...
