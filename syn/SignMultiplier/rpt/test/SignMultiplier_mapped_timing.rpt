@@ -8,14 +8,14 @@ Report : timing
         -transition_time
 Design : SignMultiplier
 Version: L-2016.03-SP1
-Date   : Thu Dec 16 23:57:58 2021
+Date   : Sun Mar 13 16:35:23 2022
 ****************************************
 
 Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
 Wire Load Model Mode: segmented
 
-  Startpoint: io_dinA[5] (input port clocked by clk)
-  Endpoint: Result_reg_14_
+  Startpoint: io_dinA[1] (input port clocked by clk)
+  Endpoint: Result_reg_30_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: INPUT_GROUP
   Path Type: max
@@ -37,60 +37,96 @@ Attributes:
   clock clk (rise edge)                                             0.00       0.00
   clock network delay (ideal)                                       2.00       2.00
   input external delay                                              4.00       6.00 f
-  io_dinA[5] (in)                                         1.00      0.00       6.00 f
-  io_dinA[5] (net)                              1                   0.00       6.00 f
-  U34/ZN (INVD1BWP7T35P140)                               0.15      0.12       6.12 r
-  n31 (net)                                     1                   0.00       6.12 r
-  U35/ZN (INVD1BWP7T35P140)                               0.07      0.06       6.18 f
-  n32 (net)                                    11                   0.00       6.18 f
-  U51/ZN (INVD1BWP7T35P140)                               0.06      0.06       6.23 r
-  n48 (net)                                    11                   0.00       6.23 r
-  U82/ZN (AOI22D1BWP7T35P140)                             0.11      0.06       6.30 f
-  n140 (net)                                    8                   0.00       6.30 f
-  U83/ZN (INVD1BWP7T35P140)                               0.05      0.05       6.35 r
-  n74 (net)                                     5                   0.00       6.35 r
-  U85/ZN (OAI221D0BWP7T35P140)                            0.09      0.07       6.42 f
-  n59 (net)                                     3                   0.00       6.42 f
-  U102/ZN (INVD1BWP7T35P140)                              0.04      0.05       6.47 r
-  n138 (net)                                    6                   0.00       6.47 r
-  U140/ZN (AOI22D1BWP7T35P140)                            0.07      0.04       6.51 f
-  n101 (net)                                    1                   0.00       6.51 f
-  U153/S (FA1D1BWP7T35P140)                               0.03      0.12       6.63 r
-  n103 (net)                                    1                   0.00       6.63 r
-  U154/S (FA1D1BWP7T35P140)                               0.03      0.08       6.72 f
-  intadd_0_A_4_ (net)                           1                   0.00       6.72 f
-  intadd_0_U9/CO (FA1D1BWP7T35P140)                       0.02      0.07       6.78 f    mo 
-  intadd_0_n8 (net)                             1                   0.00       6.78 f
-  intadd_0_U8/CO (FA1D1BWP7T35P140)                       0.02      0.06       6.84 f    mo 
-  intadd_0_n7 (net)                             1                   0.00       6.84 f
-  intadd_0_U7/CO (FA1D1BWP7T35P140)                       0.02      0.06       6.89 f    mo 
-  intadd_0_n6 (net)                             1                   0.00       6.89 f
-  intadd_0_U6/CO (FA1D1BWP7T35P140)                       0.02      0.06       6.95 f    mo 
-  intadd_0_n5 (net)                             1                   0.00       6.95 f
-  intadd_0_U5/CO (FA1D1BWP7T35P140)                       0.02      0.06       7.00 f    mo 
-  intadd_0_n4 (net)                             1                   0.00       7.00 f
-  intadd_0_U4/CO (FA1D1BWP7T35P140)                       0.02      0.06       7.06 f    mo 
-  intadd_0_n3 (net)                             1                   0.00       7.06 f
-  intadd_0_U3/CO (FA1D1BWP7T35P140)                       0.03      0.06       7.11 f    mo 
-  intadd_0_n2 (net)                             1                   0.00       7.11 f
-  intadd_0_U2/S (FA1D1BWP7T35P140)                        0.02      0.07       7.18 f    mo 
-  intadd_0_SUM_11_ (net)                        1                   0.00       7.18 f
-  U67/ZN (INVD1BWP7T35P140)                               0.01      0.01       7.19 r
-  N16 (net)                                     1                   0.00       7.19 r
-  Result_reg_14_/D (DFCNQD1BWP7T35P140)                   0.01      0.00       7.19 r
-  data arrival time                                                            7.19
+  io_dinA[1] (in)                                         1.00      0.00       6.00 f
+  io_dinA[1] (net)                              1                   0.00       6.00 f
+  U24/ZN (INVD1BWP7T35P140)                               0.15      0.12       6.12 r
+  n21 (net)                                     1                   0.00       6.12 r
+  U25/ZN (INVD1BWP7T35P140)                               0.06      0.05       6.17 f
+  n22 (net)                                     7                   0.00       6.17 f
+  U81/ZN (INVD1BWP7T35P140)                               0.04      0.04       6.20 r
+  n78 (net)                                     5                   0.00       6.20 r
+  U143/ZN (AOI22D1BWP7T35P140)                            0.10      0.06       6.26 f
+  n241 (net)                                    7                   0.00       6.26 f
+  U145/ZN (NR2D1BWP7T35P140)                              0.10      0.09       6.35 r
+  n387 (net)                                   13                   0.00       6.35 r
+  U147/ZN (AOI22D1BWP7T35P140)                            0.05      0.04       6.39 f
+  n100 (net)                                    1                   0.00       6.39 f
+  U148/ZN (OAI221D0BWP7T35P140)                           0.08      0.04       6.44 r
+  n102 (net)                                    2                   0.00       6.44 r
+  U150/ZN (OAI21D1BWP7T35P140)                            0.05      0.04       6.48 f
+  intadd_0_A_0_ (net)                           1                   0.00       6.48 f
+  intadd_0_U29/CO (FA1D1BWP7T35P140)                      0.03      0.07       6.55 f    mo 
+  intadd_0_n28 (net)                            1                   0.00       6.55 f
+  intadd_0_U28/CO (FA1D1BWP7T35P140)                      0.02      0.06       6.60 f    mo 
+  intadd_0_n27 (net)                            1                   0.00       6.60 f
+  intadd_0_U27/CO (FA1D1BWP7T35P140)                      0.02      0.06       6.66 f    mo 
+  intadd_0_n26 (net)                            1                   0.00       6.66 f
+  intadd_0_U26/CO (FA1D1BWP7T35P140)                      0.02      0.06       6.71 f    mo 
+  intadd_0_n25 (net)                            1                   0.00       6.71 f
+  intadd_0_U25/CO (FA1D1BWP7T35P140)                      0.02      0.06       6.77 f    mo 
+  intadd_0_n24 (net)                            1                   0.00       6.77 f
+  intadd_0_U24/CO (FA1D1BWP7T35P140)                      0.02      0.06       6.82 f    mo 
+  intadd_0_n23 (net)                            1                   0.00       6.82 f
+  intadd_0_U23/CO (FA1D1BWP7T35P140)                      0.02      0.06       6.88 f    mo 
+  intadd_0_n22 (net)                            1                   0.00       6.88 f
+  intadd_0_U22/CO (FA1D1BWP7T35P140)                      0.02      0.06       6.93 f    mo 
+  intadd_0_n21 (net)                            1                   0.00       6.93 f
+  intadd_0_U21/CO (FA1D1BWP7T35P140)                      0.02      0.06       6.99 f    mo 
+  intadd_0_n20 (net)                            1                   0.00       6.99 f
+  intadd_0_U20/CO (FA1D1BWP7T35P140)                      0.02      0.06       7.04 f    mo 
+  intadd_0_n19 (net)                            1                   0.00       7.04 f
+  intadd_0_U19/CO (FA1D1BWP7T35P140)                      0.02      0.06       7.10 f    mo 
+  intadd_0_n18 (net)                            1                   0.00       7.10 f
+  intadd_0_U18/CO (FA1D1BWP7T35P140)                      0.02      0.06       7.16 f    mo 
+  intadd_0_n17 (net)                            1                   0.00       7.16 f
+  intadd_0_U17/CO (FA1D1BWP7T35P140)                      0.02      0.06       7.21 f    mo 
+  intadd_0_n16 (net)                            1                   0.00       7.21 f
+  intadd_0_U16/CO (FA1D1BWP7T35P140)                      0.02      0.06       7.27 f    mo 
+  intadd_0_n15 (net)                            1                   0.00       7.27 f
+  intadd_0_U15/CO (FA1D1BWP7T35P140)                      0.02      0.06       7.32 f    mo 
+  intadd_0_n14 (net)                            1                   0.00       7.32 f
+  intadd_0_U14/CO (FA1D1BWP7T35P140)                      0.02      0.06       7.38 f    mo 
+  intadd_0_n13 (net)                            1                   0.00       7.38 f
+  intadd_0_U13/CO (FA1D1BWP7T35P140)                      0.02      0.06       7.43 f    mo 
+  intadd_0_n12 (net)                            1                   0.00       7.43 f
+  intadd_0_U12/CO (FA1D1BWP7T35P140)                      0.02      0.06       7.49 f    mo 
+  intadd_0_n11 (net)                            1                   0.00       7.49 f
+  intadd_0_U11/CO (FA1D1BWP7T35P140)                      0.02      0.06       7.54 f    mo 
+  intadd_0_n10 (net)                            1                   0.00       7.54 f
+  intadd_0_U10/CO (FA1D1BWP7T35P140)                      0.02      0.06       7.60 f    mo 
+  intadd_0_n9 (net)                             1                   0.00       7.60 f
+  intadd_0_U9/CO (FA1D1BWP7T35P140)                       0.02      0.06       7.65 f    mo 
+  intadd_0_n8 (net)                             1                   0.00       7.65 f
+  intadd_0_U8/CO (FA1D1BWP7T35P140)                       0.02      0.06       7.71 f    mo 
+  intadd_0_n7 (net)                             1                   0.00       7.71 f
+  intadd_0_U7/CO (FA1D1BWP7T35P140)                       0.02      0.06       7.76 f    mo 
+  intadd_0_n6 (net)                             1                   0.00       7.76 f
+  intadd_0_U6/CO (FA1D1BWP7T35P140)                       0.02      0.06       7.82 f    mo 
+  intadd_0_n5 (net)                             1                   0.00       7.82 f
+  intadd_0_U5/CO (FA1D1BWP7T35P140)                       0.02      0.06       7.87 f    mo 
+  intadd_0_n4 (net)                             1                   0.00       7.87 f
+  intadd_0_U4/CO (FA1D1BWP7T35P140)                       0.02      0.06       7.93 f    mo 
+  intadd_0_n3 (net)                             1                   0.00       7.93 f
+  intadd_0_U3/CO (FA1D1BWP7T35P140)                       0.02      0.06       7.98 f    mo 
+  intadd_0_n2 (net)                             1                   0.00       7.98 f
+  intadd_0_U2/S (FA1D1BWP7T35P140)                        0.02      0.07       8.05 f    mo 
+  intadd_0_SUM_27_ (net)                        1                   0.00       8.05 f
+  U133/ZN (INVD1BWP7T35P140)                              0.01      0.01       8.06 r
+  N32 (net)                                     1                   0.00       8.06 r
+  Result_reg_30_/D (DFCNQD1BWP7T35P140)                   0.01      0.00       8.06 r
+  data arrival time                                                            8.06
 
   clock clk (rise edge)                                            10.00      10.00
   clock network delay (ideal)                                       2.00      12.00
   clock uncertainty                                                -1.00      11.00
-  Result_reg_14_/CP (DFCNQD1BWP7T35P140)                            0.00      11.00 r
+  Result_reg_30_/CP (DFCNQD1BWP7T35P140)                            0.00      11.00 r
   library setup time                                               -0.03      10.97
   data required time                                                          10.97
   ---------------------------------------------------------------------------------------------------------
   data required time                                                          10.97
-  data arrival time                                                           -7.19
+  data arrival time                                                           -8.06
   ---------------------------------------------------------------------------------------------------------
-  slack (MET)                                                                  3.78
+  slack (MET)                                                                  2.91
 
 
   Startpoint: Result_reg_0_

@@ -5,13 +5,13 @@ Report : power
         -analysis_effort low
 Design : SignMultiplier
 Version: L-2016.03-SP1
-Date   : Thu Dec 16 23:57:58 2021
+Date   : Sun Mar 13 16:35:23 2022
 ****************************************
 
 
 Library(s) Used:
 
-    tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs (File: /root/lib/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db)
+    tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs (File: /mnt/data/projects/ic_lib/tsmc28/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db)
 
 
 Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
@@ -37,5 +37,5 @@ Power-specific unit information :
                                        Switch   Int      Leak     Total
 Hierarchy                              Power    Power    Power    Power    %
 --------------------------------------------------------------------------------
-SignMultiplier                         4.93e-03 8.93e-03 2.87e+03 1.67e-02 100.0
+SignMultiplier                         1.61e-02 2.56e-02 9.62e+03 5.14e-02 100.0
 1

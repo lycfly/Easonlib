@@ -5,7 +5,7 @@ Report : clock_gating
         -verbose
 Design : SignMultiplier
 Version: L-2016.03-SP1
-Date   : Thu Dec 16 23:57:58 2021
+Date   : Sun Mar 13 16:35:24 2022
 ****************************************
 
 
@@ -28,9 +28,25 @@ Date   : Thu Dec 16 23:57:58 2021
                                                  |       Result_reg_10_
                                                  |       Result_reg_11_
                                                  |       Result_reg_12_
-                                                 |       Result_reg_15_
                                                  |       Result_reg_13_
                                                  |       Result_reg_14_
+                                                 |       Result_reg_15_
+                                                 |       Result_reg_16_
+                                                 |       Result_reg_17_
+                                                 |       Result_reg_18_
+                                                 |       Result_reg_19_
+                                                 |       Result_reg_20_
+                                                 |       Result_reg_21_
+                                                 |       Result_reg_22_
+                                                 |       Result_reg_23_
+                                                 |       Result_reg_24_
+                                                 |       Result_reg_25_
+                                                 |       Result_reg_26_
+                                                 |       Result_reg_27_
+                                                 |       Result_reg_31_
+                                                 |       Result_reg_28_
+                                                 |       Result_reg_29_
+                                                 |       Result_reg_30_
                                                  |
 --------------------------------------------------------------------------------
 
@@ -39,11 +55,11 @@ Date   : Thu Dec 16 23:57:58 2021
           ------------------------------------------------------------
           |    Number of Clock gating elements    |        1         |
           |                                       |                  |
-          |    Number of Gated registers          |    16 (94.12%)   |
+          |    Number of Gated registers          |    32 (96.97%)   |
           |                                       |                  |
-          |    Number of Ungated registers        |     1 (5.88%)    |
+          |    Number of Ungated registers        |     1 (3.03%)    |
           |                                       |                  |
-          |    Total number of registers          |       17         |
+          |    Total number of registers          |       33         |
           ------------------------------------------------------------
 
 

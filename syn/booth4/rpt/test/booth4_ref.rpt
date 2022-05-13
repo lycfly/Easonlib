@@ -1,0 +1,84 @@
+ 
+****************************************
+Report : reference
+Design : booth4
+Version: L-2016.03-SP1
+Date   : Fri May 13 11:53:45 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AN2D0BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.392000       3      1.176000  
+AN2D2BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.490000       1      0.490000  
+AN3D2BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.588000       1      0.588000  
+AO21D1BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.490000       4      1.960000  
+AO22D0BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.686000       2      1.372000  
+AO222D1BWP7T35P140 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.882000       2      1.764000  
+AOI21D1BWP7T35P140 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.490000       4      1.960000  
+AOI22D1BWP7T35P140 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.490000       5      2.450000  
+AOI211D0BWP7T35P140
+                   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.490000       1      0.490000  
+DEL025D1BWP7T35P140
+                   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.294000       1      0.294000  
+DFCNQD1BWP7T35P140 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  1.862000      20     37.240000  n
+DFCNQD2BWP7T35P140 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  1.960000       8     15.680000  n
+DFQD1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  1.666000       1      1.666000  n
+FA1D1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  1.666000       8     13.328000  r
+HA1D1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  1.274000       7      8.918000  r
+INR2D1BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.392000       1      0.392000  
+INVD1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.196000      24      4.704000  
+MOAI22D0BWP7T35P140
+                   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.588000       5      2.940000  
+MUX2D1BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.686000       6      4.116000  
+ND2D1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.294000      18      5.292000  
+ND3D1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.392000       7      2.744000  
+NR2D1BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.294000       9      2.646000  
+NR3D0BWP7T35P140   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.392000       2      0.784000  
+OAI211D0BWP7T35P140
+                   tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.490000       1      0.490000  
+SNPS_CLOCK_GATE_HIGH_booth4_0     1.470000       1      1.470000  b, h
+SNPS_CLOCK_GATE_HIGH_booth4_1     1.470000       1      1.470000  b, h
+TIELBWP7T35P140    tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.196000       1      0.196000  
+XNR2D0BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.686000       1      0.686000  
+XOR2D0BWP7T35P140  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                  0.686000       2      1.372000  
+-----------------------------------------------------------------------------
+Total 29 references                                   118.678000
+1

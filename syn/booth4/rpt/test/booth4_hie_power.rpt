@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : booth4
+Version: L-2016.03-SP1
+Date   : Fri May 13 11:53:45 2022
+****************************************
+
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs (File: /mnt/data/projects/ic_lib/tsmc28/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db)
+
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+booth4                 ZeroWireload      tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+SNPS_CLOCK_GATE_HIGH_booth4_0
+                       ZeroWireload      tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+SNPS_CLOCK_GATE_HIGH_booth4_1
+                       ZeroWireload      tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+
+Global Operating Voltage = 0.81 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+booth4                                 2.73e-03 1.08e-02 2.84e+03 1.63e-02 100.0
+1

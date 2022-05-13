@@ -5,7 +5,7 @@ Report : constraint
         -all_violators
 Design : SignMultiplier
 Version: L-2016.03-SP1
-Date   : Thu Dec 16 23:57:58 2021
+Date   : Sun Mar 13 16:35:23 2022
 ****************************************
 
 
@@ -15,84 +15,83 @@ Date   : Thu Dec 16 23:57:58 2021
    Net                      Transition     Transition        Slack
    -----------------------------------------------------------------
    io_dinA[0]                   0.44           1.00          -0.56  (VIOLATED)
-       PIN :   U8/I             0.44           1.00          -0.56  (VIOLATED)
-   io_dinA[1]                   0.44           1.00          -0.56  (VIOLATED)
-       PIN :   U16/I            0.44           1.00          -0.56  (VIOLATED)
-   io_dinA[2]                   0.44           1.00          -0.56  (VIOLATED)
        PIN :   U6/I             0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[1]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U24/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[2]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U8/I             0.44           1.00          -0.56  (VIOLATED)
    io_dinA[3]                   0.44           1.00          -0.56  (VIOLATED)
        PIN :   U36/I            0.44           1.00          -0.56  (VIOLATED)
    io_dinA[4]                   0.44           1.00          -0.56  (VIOLATED)
-       PIN :   U12/I            0.44           1.00          -0.56  (VIOLATED)
-   io_dinA[5]                   0.44           1.00          -0.56  (VIOLATED)
-       PIN :   U34/I            0.44           1.00          -0.56  (VIOLATED)
-   io_dinA[6]                   0.44           1.00          -0.56  (VIOLATED)
-       PIN :   U14/I            0.44           1.00          -0.56  (VIOLATED)
-   io_dinA[7]                   0.44           1.00          -0.56  (VIOLATED)
-       PIN :   U30/I            0.44           1.00          -0.56  (VIOLATED)
-   io_dinB[0]                   0.44           1.00          -0.56  (VIOLATED)
-       PIN :   U32/I            0.44           1.00          -0.56  (VIOLATED)
-   io_dinB[1]                   0.44           1.00          -0.56  (VIOLATED)
-       PIN :   U28/I            0.44           1.00          -0.56  (VIOLATED)
-   io_dinB[2]                   0.44           1.00          -0.56  (VIOLATED)
-       PIN :   U18/I            0.44           1.00          -0.56  (VIOLATED)
-   io_dinB[3]                   0.44           1.00          -0.56  (VIOLATED)
-       PIN :   U20/I            0.44           1.00          -0.56  (VIOLATED)
-   io_dinB[4]                   0.44           1.00          -0.56  (VIOLATED)
-       PIN :   U22/I            0.44           1.00          -0.56  (VIOLATED)
-   io_dinB[5]                   0.44           1.00          -0.56  (VIOLATED)
-       PIN :   U24/I            0.44           1.00          -0.56  (VIOLATED)
-   io_dinB[6]                   0.44           1.00          -0.56  (VIOLATED)
-       PIN :   U26/I            0.44           1.00          -0.56  (VIOLATED)
-   io_dinB[7]                   0.44           1.00          -0.56  (VIOLATED)
        PIN :   U10/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[5]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U26/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[6]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U12/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[7]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U28/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[8]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U14/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[9]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U30/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[10]                  0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U16/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[11]                  0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U32/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[12]                  0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U18/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[13]                  0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U34/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[14]                  0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U20/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[15]                  0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U22/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[0]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U40/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[1]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U44/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[2]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U46/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[3]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U48/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[4]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U50/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[5]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U52/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[6]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U54/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[7]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U56/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[8]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U58/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[9]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U60/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[10]                  0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U62/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[11]                  0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U64/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[12]                  0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U68/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[13]                  0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U42/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[14]                  0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U70/I            0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[15]                  0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U38/I            0.44           1.00          -0.56  (VIOLATED)
    io_din_vld                   0.44           1.00          -0.56  (VIOLATED)
        PIN :   U4/I             0.44           1.00          -0.56  (VIOLATED)
    resetn                       0.44           1.00          -0.56  (VIOLATED)
-       PIN :   dout_vld_reg_reg/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_1_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_2_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_3_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_4_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_5_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_6_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_7_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_8_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_9_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_10_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_11_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_12_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_15_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_13_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_14_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
-       PIN :   Result_reg_0_/CDN
-                                0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U66/I            0.44           1.00          -0.56  (VIOLATED)
 
    -----------------------------------------------------------------
-   Total                      18                -10.07  
+   Total                      34                -19.03  
 
    max_leakage_power
 
                              Required        Actual
    Design                   Leakage Power  Leakage Power     Slack
    -----------------------------------------------------------------
-   SignMultiplier               0.00        3268.41       -3268.41  (VIOLATED)
+   SignMultiplier               0.00       10591.95       -10591.95 (VIOLATED)
 
 
 1

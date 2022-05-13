@@ -1,0 +1,10 @@
+#!/bin/sh
+log_date=test
+if [ ! -d 'rpt' ];then
+mkdir rpt
+ fi 
+if [ ! -d 'log' ];then
+mkdir log
+ fi 
+mkdir rpt/${log_date}
+pt_shell -f main.tcl -x "set run_date ${log_date}" | tee ./log/${log_date}.log

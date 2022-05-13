@@ -12,7 +12,7 @@
     set compile_disable_hierarchical_inverter_opt true
     set auto_insert_level_shifters_on_clocks      all
     set auto_insert_level_shifters true
-    analyze -format verilog "/mnt/mydata/Easonlib/syn/SignMultiplier/SignMultiplier.v"  -define DC_SYN
+    analyze -format verilog "/mnt/data/projects/kws/Easonlib/syn/SignMultiplier/SignMultiplier.v"  -define DC_SYN
     
     elaborate       $TOP_MODULE
     current_design  $TOP_MODULE

@@ -1,0 +1,4 @@
+[debug] [easonlib-test] Classpath dependencies List()
+[debug] [easonlib-test] Dependencies from configurations List(easonlib)
+[debug] Bloop wrote the configuration of project 'easonlib-test' to '/mnt/data/projects/kws/Easonlib/.bloop/easonlib-test.json'
+[success] Generated .bloop/easonlib-test.json

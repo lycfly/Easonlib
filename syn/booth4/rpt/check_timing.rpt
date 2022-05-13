@@ -1,0 +1,28 @@
+Information: Changed wire load model for 'DW01_inc_width2' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_2_1_2' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width10' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_10_10_10' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width10' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_10_10_10' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width10' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_10_9_10' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width10' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_1_10_10' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width10' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_10_8_10' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Updating design information... (UID-85)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1

@@ -1,5 +1,5 @@
 Information: Changed wire load model for 'DW02_mult' from '(none)' to 'ZeroWireload'. (OPT-170)
-Information: Changed wire load model for '*MULT_TC_OP_8_8_16' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for '*MULT_TC_OP_16_16_32' from '(none)' to 'ZeroWireload'. (OPT-170)
 Information: Updating design information... (UID-85)
 
 Information: Checking generated_clocks...

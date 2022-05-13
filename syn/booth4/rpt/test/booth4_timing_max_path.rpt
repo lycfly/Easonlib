@@ -1,0 +1,1788 @@
+ 
+****************************************
+Report : timing
+        -path full_clock_expanded
+        -delay max
+        -max_paths 50
+        -sort_by slack
+Design : booth4
+Version: L-2016.03-SP1
+Date   : Fri May 13 11:53:45 2022
+****************************************
+
+Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: shiftReg_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[1] (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_2_/CP (DFCNQD1BWP7T35P140)                 0.00       2.00 r
+  shiftReg_reg_2_/Q (DFCNQD1BWP7T35P140)                  0.37       2.37 r
+  io_dout[1] (out)                                        0.00       2.37 r
+  data arrival time                                                  2.37
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.63
+
+
+  Startpoint: shiftReg_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[0] (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_1_/CP (DFCNQD1BWP7T35P140)                 0.00       2.00 r
+  shiftReg_reg_1_/Q (DFCNQD1BWP7T35P140)                  0.37       2.37 r
+  io_dout[0] (out)                                        0.00       2.37 r
+  data arrival time                                                  2.37
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.63
+
+
+  Startpoint: shiftReg_reg_8_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[7] (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_8_/CP (DFCNQD1BWP7T35P140)                 0.00       2.00 r
+  shiftReg_reg_8_/Q (DFCNQD1BWP7T35P140)                  0.37       2.37 r
+  io_dout[7] (out)                                        0.00       2.37 r
+  data arrival time                                                  2.37
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.63
+
+
+  Startpoint: shiftReg_reg_7_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[6] (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_7_/CP (DFCNQD1BWP7T35P140)                 0.00       2.00 r
+  shiftReg_reg_7_/Q (DFCNQD1BWP7T35P140)                  0.37       2.37 r
+  io_dout[6] (out)                                        0.00       2.37 r
+  data arrival time                                                  2.37
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.63
+
+
+  Startpoint: shiftReg_reg_6_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[5] (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_6_/CP (DFCNQD1BWP7T35P140)                 0.00       2.00 r
+  shiftReg_reg_6_/Q (DFCNQD1BWP7T35P140)                  0.37       2.37 r
+  io_dout[5] (out)                                        0.00       2.37 r
+  data arrival time                                                  2.37
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.63
+
+
+  Startpoint: shiftReg_reg_5_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[4] (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_5_/CP (DFCNQD1BWP7T35P140)                 0.00       2.00 r
+  shiftReg_reg_5_/Q (DFCNQD1BWP7T35P140)                  0.37       2.37 r
+  io_dout[4] (out)                                        0.00       2.37 r
+  data arrival time                                                  2.37
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.63
+
+
+  Startpoint: shiftReg_reg_4_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[3] (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_4_/CP (DFCNQD1BWP7T35P140)                 0.00       2.00 r
+  shiftReg_reg_4_/Q (DFCNQD1BWP7T35P140)                  0.37       2.37 r
+  io_dout[3] (out)                                        0.00       2.37 r
+  data arrival time                                                  2.37
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.63
+
+
+  Startpoint: shiftReg_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[2] (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_3_/CP (DFCNQD1BWP7T35P140)                 0.00       2.00 r
+  shiftReg_reg_3_/Q (DFCNQD1BWP7T35P140)                  0.37       2.37 r
+  io_dout[2] (out)                                        0.00       2.37 r
+  data arrival time                                                  2.37
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.63
+
+
+  Startpoint: cal_en_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout_vld
+            (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              2.00       2.00
+  cal_en_reg/CP (DFCNQD1BWP7T35P140)       0.00       2.00 r
+  cal_en_reg/Q (DFCNQD1BWP7T35P140)        0.14       2.14 f
+  U64/ZN (INVD1BWP7T35P140)                0.02       2.16 r
+  U58/Z (AN2D2BWP7T35P140)                 0.15       2.31 r
+  io_dout_vld (out)                        0.00       2.31 r
+  data arrival time                                   2.31
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              2.00      12.00
+  clock uncertainty                       -1.00      11.00
+  output external delay                   -6.00       5.00
+  data required time                                  5.00
+  -----------------------------------------------------------
+  data required time                                  5.00
+  data arrival time                                  -2.31
+  -----------------------------------------------------------
+  slack (MET)                                         2.69
+
+
+  Startpoint: cal_cnt_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_cal_finish
+            (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  cal_cnt_reg_1_/CP (DFCNQD1BWP7T35P140)                  0.00       2.00 r
+  cal_cnt_reg_1_/Q (DFCNQD1BWP7T35P140)                   0.14       2.14 r
+  U57/Z (AN3D2BWP7T35P140)                                0.16       2.30 r
+  io_cal_finish (out)                                     0.00       2.30 r
+  data arrival time                                                  2.30
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.70
+
+
+  Startpoint: shiftReg_reg_16_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[15]
+            (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_16_/CP (DFCNQD2BWP7T35P140)                0.00       2.00 r
+  shiftReg_reg_16_/Q (DFCNQD2BWP7T35P140)                 0.26       2.26 r
+  io_dout[15] (out)                                       0.00       2.26 r
+  data arrival time                                                  2.26
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.26
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.74
+
+
+  Startpoint: shiftReg_reg_10_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[9] (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_10_/CP (DFCNQD2BWP7T35P140)                0.00       2.00 r
+  shiftReg_reg_10_/Q (DFCNQD2BWP7T35P140)                 0.25       2.25 r
+  io_dout[9] (out)                                        0.00       2.25 r
+  data arrival time                                                  2.25
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.75
+
+
+  Startpoint: shiftReg_reg_15_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[14]
+            (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_15_/CP (DFCNQD2BWP7T35P140)                0.00       2.00 r
+  shiftReg_reg_15_/Q (DFCNQD2BWP7T35P140)                 0.25       2.25 r
+  io_dout[14] (out)                                       0.00       2.25 r
+  data arrival time                                                  2.25
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.75
+
+
+  Startpoint: shiftReg_reg_14_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[13]
+            (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_14_/CP (DFCNQD2BWP7T35P140)                0.00       2.00 r
+  shiftReg_reg_14_/Q (DFCNQD2BWP7T35P140)                 0.25       2.25 r
+  io_dout[13] (out)                                       0.00       2.25 r
+  data arrival time                                                  2.25
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.75
+
+
+  Startpoint: shiftReg_reg_13_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[12]
+            (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_13_/CP (DFCNQD2BWP7T35P140)                0.00       2.00 r
+  shiftReg_reg_13_/Q (DFCNQD2BWP7T35P140)                 0.25       2.25 r
+  io_dout[12] (out)                                       0.00       2.25 r
+  data arrival time                                                  2.25
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.75
+
+
+  Startpoint: shiftReg_reg_12_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[11]
+            (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_12_/CP (DFCNQD2BWP7T35P140)                0.00       2.00 r
+  shiftReg_reg_12_/Q (DFCNQD2BWP7T35P140)                 0.25       2.25 r
+  io_dout[11] (out)                                       0.00       2.25 r
+  data arrival time                                                  2.25
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.75
+
+
+  Startpoint: shiftReg_reg_11_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[10]
+            (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_11_/CP (DFCNQD2BWP7T35P140)                0.00       2.00 r
+  shiftReg_reg_11_/Q (DFCNQD2BWP7T35P140)                 0.25       2.25 r
+  io_dout[10] (out)                                       0.00       2.25 r
+  data arrival time                                                  2.25
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.75
+
+
+  Startpoint: shiftReg_reg_9_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: io_dout[8] (output port clocked by clk)
+  Path Group: OUTPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_9_/CP (DFCNQD2BWP7T35P140)                 0.00       2.00 r
+  shiftReg_reg_9_/Q (DFCNQD2BWP7T35P140)                  0.25       2.25 r
+  io_dout[8] (out)                                        0.00       2.25 r
+  data arrival time                                                  2.25
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  output external delay                                  -6.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -2.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.75
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: clk_gate_shiftReg_reg/latch
+            (gating element for clock clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U56/ZN (INVD1BWP7T35P140)                               0.03       6.24 r
+  U152/ZN (ND2D1BWP7T35P140)                              0.02       6.26 f
+  clk_gate_shiftReg_reg/EN (SNPS_CLOCK_GATE_HIGH_booth4_1)     0.00     6.26 f
+  clk_gate_shiftReg_reg/latch/E (CKLNQD1BWP7T35P140)      0.00       6.26 f
+  data arrival time                                                  6.26
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  clk_gate_shiftReg_reg/latch/CP (CKLNQD1BWP7T35P140)     0.00      11.00 r
+  clock gating setup time                                -0.30      10.70
+  data required time                                                10.70
+  --------------------------------------------------------------------------
+  data required time                                                10.70
+  data arrival time                                                 -6.26
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.44
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: clk_gate_Breg_reg/latch
+            (gating element for clock clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  clk_gate_Breg_reg/EN (SNPS_CLOCK_GATE_HIGH_booth4_0)     0.00      6.21 f
+  clk_gate_Breg_reg/latch/E (CKLNQD1BWP7T35P140)          0.00       6.21 f
+  data arrival time                                                  6.21
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  clk_gate_Breg_reg/latch/CP (CKLNQD1BWP7T35P140)         0.00      11.00 r
+  clock gating setup time                                -0.30      10.70
+  data required time                                                10.70
+  --------------------------------------------------------------------------
+  data required time                                                10.70
+  data arrival time                                                 -6.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.49
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_7_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U123/ZN (INR2D1BWP7T35P140)                             0.08       6.29 r
+  U125/Z (AO222D1BWP7T35P140)                             0.06       6.36 r
+  shiftReg_reg_7_/D (DFCNQD1BWP7T35P140)                  0.00       6.36 r
+  data arrival time                                                  6.36
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_7_/CP (DFCNQD1BWP7T35P140)                 0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.61
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_8_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U123/ZN (INR2D1BWP7T35P140)                             0.08       6.29 r
+  U124/Z (AO222D1BWP7T35P140)                             0.06       6.35 r
+  shiftReg_reg_8_/D (DFCNQD1BWP7T35P140)                  0.00       6.35 r
+  data arrival time                                                  6.35
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_8_/CP (DFCNQD1BWP7T35P140)                 0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.62
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_16_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U60/ZN (NR2D1BWP7T35P140)                               0.05       6.26 r
+  U130/ZN (INVD1BWP7T35P140)                              0.03       6.29 f
+  U132/ZN (NR2D1BWP7T35P140)                              0.03       6.32 r
+  U133/Z (AO21D1BWP7T35P140)                              0.03       6.35 r
+  shiftReg_reg_16_/D (DFCNQD2BWP7T35P140)                 0.00       6.35 r
+  data arrival time                                                  6.35
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_16_/CP (DFCNQD2BWP7T35P140)                0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.62
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U60/ZN (NR2D1BWP7T35P140)                               0.05       6.26 r
+  U130/ZN (INVD1BWP7T35P140)                              0.03       6.29 f
+  U132/ZN (NR2D1BWP7T35P140)                              0.03       6.32 r
+  U135/Z (AO21D1BWP7T35P140)                              0.03       6.35 r
+  shiftReg_reg_14_/D (DFCNQD2BWP7T35P140)                 0.00       6.35 r
+  data arrival time                                                  6.35
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_14_/CP (DFCNQD2BWP7T35P140)                0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.62
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_15_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U60/ZN (NR2D1BWP7T35P140)                               0.05       6.26 r
+  U130/ZN (INVD1BWP7T35P140)                              0.03       6.29 f
+  U132/ZN (NR2D1BWP7T35P140)                              0.03       6.32 r
+  U134/Z (AO21D1BWP7T35P140)                              0.03       6.35 r
+  shiftReg_reg_15_/D (DFCNQD2BWP7T35P140)                 0.00       6.35 r
+  data arrival time                                                  6.35
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_15_/CP (DFCNQD2BWP7T35P140)                0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.62
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_10_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U123/ZN (INR2D1BWP7T35P140)                             0.08       6.29 r
+  U149/ZN (MOAI22D0BWP7T35P140)                           0.05       6.34 r
+  shiftReg_reg_10_/D (DFCNQD2BWP7T35P140)                 0.00       6.34 r
+  data arrival time                                                  6.34
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_10_/CP (DFCNQD2BWP7T35P140)                0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.62
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_12_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U123/ZN (INR2D1BWP7T35P140)                             0.08       6.29 r
+  U145/ZN (MOAI22D0BWP7T35P140)                           0.05       6.34 r
+  shiftReg_reg_12_/D (DFCNQD2BWP7T35P140)                 0.00       6.34 r
+  data arrival time                                                  6.34
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_12_/CP (DFCNQD2BWP7T35P140)                0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.62
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U123/ZN (INR2D1BWP7T35P140)                             0.08       6.29 r
+  U147/ZN (MOAI22D0BWP7T35P140)                           0.05       6.34 r
+  shiftReg_reg_11_/D (DFCNQD2BWP7T35P140)                 0.00       6.34 r
+  data arrival time                                                  6.34
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_11_/CP (DFCNQD2BWP7T35P140)                0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.62
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_13_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U123/ZN (INR2D1BWP7T35P140)                             0.08       6.29 r
+  U143/ZN (MOAI22D0BWP7T35P140)                           0.05       6.34 r
+  shiftReg_reg_13_/D (DFCNQD2BWP7T35P140)                 0.00       6.34 r
+  data arrival time                                                  6.34
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_13_/CP (DFCNQD2BWP7T35P140)                0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.62
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_9_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U123/ZN (INR2D1BWP7T35P140)                             0.08       6.29 r
+  U151/ZN (MOAI22D0BWP7T35P140)                           0.05       6.34 r
+  shiftReg_reg_9_/D (DFCNQD2BWP7T35P140)                  0.00       6.34 r
+  data arrival time                                                  6.34
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_9_/CP (DFCNQD2BWP7T35P140)                 0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.62
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U118/Z (MUX2D1BWP7T35P140)                              0.06       6.27 r
+  shiftReg_reg_5_/D (DFCNQD1BWP7T35P140)                  0.00       6.27 r
+  data arrival time                                                  6.27
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_5_/CP (DFCNQD1BWP7T35P140)                 0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.70
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U117/Z (MUX2D1BWP7T35P140)                              0.06       6.27 r
+  shiftReg_reg_3_/D (DFCNQD1BWP7T35P140)                  0.00       6.27 r
+  data arrival time                                                  6.27
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_3_/CP (DFCNQD1BWP7T35P140)                 0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.70
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U116/Z (MUX2D1BWP7T35P140)                              0.06       6.27 r
+  shiftReg_reg_1_/D (DFCNQD1BWP7T35P140)                  0.00       6.27 r
+  data arrival time                                                  6.27
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_1_/CP (DFCNQD1BWP7T35P140)                 0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.70
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_6_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U119/Z (MUX2D1BWP7T35P140)                              0.06       6.27 r
+  shiftReg_reg_6_/D (DFCNQD1BWP7T35P140)                  0.00       6.27 r
+  data arrival time                                                  6.27
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_6_/CP (DFCNQD1BWP7T35P140)                 0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.70
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U121/Z (MUX2D1BWP7T35P140)                              0.06       6.27 r
+  shiftReg_reg_4_/D (DFCNQD1BWP7T35P140)                  0.00       6.27 r
+  data arrival time                                                  6.27
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_4_/CP (DFCNQD1BWP7T35P140)                 0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.70
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U120/Z (MUX2D1BWP7T35P140)                              0.06       6.27 r
+  shiftReg_reg_2_/D (DFCNQD1BWP7T35P140)                  0.00       6.27 r
+  data arrival time                                                  6.27
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_2_/CP (DFCNQD1BWP7T35P140)                 0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.70
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: shiftReg_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  input external delay                                    4.00       6.00 f
+  io_din_vld (in)                                         0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                               0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                               0.09       6.21 f
+  U71/ZN (NR2D1BWP7T35P140)                               0.04       6.24 r
+  shiftReg_reg_0_/D (DFCNQD1BWP7T35P140)                  0.00       6.24 r
+  data arrival time                                                  6.24
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_0_/CP (DFCNQD1BWP7T35P140)                 0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -6.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.72
+
+
+  Startpoint: io_din_vld (input port clocked by clk)
+  Endpoint: cal_en_reg (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  SNPS_CLOCK_GATE_HIGH_booth4_0 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              2.00       2.00
+  input external delay                     4.00       6.00 f
+  io_din_vld (in)                          0.00       6.00 f
+  U52/ZN (INVD1BWP7T35P140)                0.12       6.12 r
+  U53/ZN (INVD1BWP7T35P140)                0.09       6.21 f
+  U56/ZN (INVD1BWP7T35P140)                0.03       6.24 r
+  U69/ZN (OAI211D0BWP7T35P140)             0.05       6.29 f
+  cal_en_reg/D (DFCNQD1BWP7T35P140)        0.00       6.29 f
+  data arrival time                                   6.29
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              2.00      12.00
+  clock uncertainty                       -1.00      11.00
+  cal_en_reg/CP (DFCNQD1BWP7T35P140)       0.00      11.00 r
+  library setup time                       0.05      11.05
+  data required time                                 11.05
+  -----------------------------------------------------------
+  data required time                                 11.05
+  data arrival time                                  -6.29
+  -----------------------------------------------------------
+  slack (MET)                                         4.76
+
+
+  Startpoint: io_dinB[7] (input port clocked by clk)
+  Endpoint: Breg_reg_7_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              2.00       2.00
+  input external delay                     4.00       6.00 f
+  io_dinB[7] (in)                          0.00       6.00 f
+  Breg_reg_7_/D (DFCNQD1BWP7T35P140)       0.00       6.00 f
+  data arrival time                                   6.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              2.00      12.00
+  clock uncertainty                       -1.00      11.00
+  Breg_reg_7_/CP (DFCNQD1BWP7T35P140)      0.00      11.00 r
+  library setup time                      -0.08      10.92
+  data required time                                 10.92
+  -----------------------------------------------------------
+  data required time                                 10.92
+  data arrival time                                  -6.00
+  -----------------------------------------------------------
+  slack (MET)                                         4.92
+
+
+  Startpoint: io_dinB[6] (input port clocked by clk)
+  Endpoint: Breg_reg_6_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              2.00       2.00
+  input external delay                     4.00       6.00 f
+  io_dinB[6] (in)                          0.00       6.00 f
+  Breg_reg_6_/D (DFCNQD1BWP7T35P140)       0.00       6.00 f
+  data arrival time                                   6.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              2.00      12.00
+  clock uncertainty                       -1.00      11.00
+  Breg_reg_6_/CP (DFCNQD1BWP7T35P140)      0.00      11.00 r
+  library setup time                      -0.08      10.92
+  data required time                                 10.92
+  -----------------------------------------------------------
+  data required time                                 10.92
+  data arrival time                                  -6.00
+  -----------------------------------------------------------
+  slack (MET)                                         4.92
+
+
+  Startpoint: io_dinB[5] (input port clocked by clk)
+  Endpoint: Breg_reg_5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              2.00       2.00
+  input external delay                     4.00       6.00 f
+  io_dinB[5] (in)                          0.00       6.00 f
+  Breg_reg_5_/D (DFCNQD1BWP7T35P140)       0.00       6.00 f
+  data arrival time                                   6.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              2.00      12.00
+  clock uncertainty                       -1.00      11.00
+  Breg_reg_5_/CP (DFCNQD1BWP7T35P140)      0.00      11.00 r
+  library setup time                      -0.08      10.92
+  data required time                                 10.92
+  -----------------------------------------------------------
+  data required time                                 10.92
+  data arrival time                                  -6.00
+  -----------------------------------------------------------
+  slack (MET)                                         4.92
+
+
+  Startpoint: io_dinB[4] (input port clocked by clk)
+  Endpoint: Breg_reg_4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              2.00       2.00
+  input external delay                     4.00       6.00 f
+  io_dinB[4] (in)                          0.00       6.00 f
+  Breg_reg_4_/D (DFCNQD1BWP7T35P140)       0.00       6.00 f
+  data arrival time                                   6.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              2.00      12.00
+  clock uncertainty                       -1.00      11.00
+  Breg_reg_4_/CP (DFCNQD1BWP7T35P140)      0.00      11.00 r
+  library setup time                      -0.08      10.92
+  data required time                                 10.92
+  -----------------------------------------------------------
+  data required time                                 10.92
+  data arrival time                                  -6.00
+  -----------------------------------------------------------
+  slack (MET)                                         4.92
+
+
+  Startpoint: io_dinB[3] (input port clocked by clk)
+  Endpoint: Breg_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              2.00       2.00
+  input external delay                     4.00       6.00 f
+  io_dinB[3] (in)                          0.00       6.00 f
+  Breg_reg_3_/D (DFCNQD1BWP7T35P140)       0.00       6.00 f
+  data arrival time                                   6.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              2.00      12.00
+  clock uncertainty                       -1.00      11.00
+  Breg_reg_3_/CP (DFCNQD1BWP7T35P140)      0.00      11.00 r
+  library setup time                      -0.08      10.92
+  data required time                                 10.92
+  -----------------------------------------------------------
+  data required time                                 10.92
+  data arrival time                                  -6.00
+  -----------------------------------------------------------
+  slack (MET)                                         4.92
+
+
+  Startpoint: io_dinB[2] (input port clocked by clk)
+  Endpoint: Breg_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              2.00       2.00
+  input external delay                     4.00       6.00 f
+  io_dinB[2] (in)                          0.00       6.00 f
+  Breg_reg_2_/D (DFCNQD1BWP7T35P140)       0.00       6.00 f
+  data arrival time                                   6.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              2.00      12.00
+  clock uncertainty                       -1.00      11.00
+  Breg_reg_2_/CP (DFCNQD1BWP7T35P140)      0.00      11.00 r
+  library setup time                      -0.08      10.92
+  data required time                                 10.92
+  -----------------------------------------------------------
+  data required time                                 10.92
+  data arrival time                                  -6.00
+  -----------------------------------------------------------
+  slack (MET)                                         4.92
+
+
+  Startpoint: io_dinB[1] (input port clocked by clk)
+  Endpoint: Breg_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              2.00       2.00
+  input external delay                     4.00       6.00 f
+  io_dinB[1] (in)                          0.00       6.00 f
+  Breg_reg_1_/D (DFCNQD1BWP7T35P140)       0.00       6.00 f
+  data arrival time                                   6.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              2.00      12.00
+  clock uncertainty                       -1.00      11.00
+  Breg_reg_1_/CP (DFCNQD1BWP7T35P140)      0.00      11.00 r
+  library setup time                      -0.08      10.92
+  data required time                                 10.92
+  -----------------------------------------------------------
+  data required time                                 10.92
+  data arrival time                                  -6.00
+  -----------------------------------------------------------
+  slack (MET)                                         4.92
+
+
+  Startpoint: io_dinB[0] (input port clocked by clk)
+  Endpoint: Breg_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUT_GROUP
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              2.00       2.00
+  input external delay                     4.00       6.00 f
+  io_dinB[0] (in)                          0.00       6.00 f
+  Breg_reg_0_/D (DFCNQD1BWP7T35P140)       0.00       6.00 f
+  data arrival time                                   6.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              2.00      12.00
+  clock uncertainty                       -1.00      11.00
+  Breg_reg_0_/CP (DFCNQD1BWP7T35P140)      0.00      11.00 r
+  library setup time                      -0.08      10.92
+  data required time                                 10.92
+  -----------------------------------------------------------
+  data required time                                 10.92
+  data arrival time                                  -6.00
+  -----------------------------------------------------------
+  slack (MET)                                         4.92
+
+
+  Startpoint: shiftReg_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: shiftReg_reg_16_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_1_/CP (DFCNQD1BWP7T35P140)                 0.00       2.00 r
+  shiftReg_reg_1_/Q (DFCNQD1BWP7T35P140)                  0.35       2.35 f
+  U73/ZN (NR2D1BWP7T35P140)                               0.10       2.45 r
+  U83/ZN (NR3D0BWP7T35P140)                               0.06       2.51 f
+  U87/Z (AN2D0BWP7T35P140)                                0.06       2.57 f
+  U88/Z (AO21D1BWP7T35P140)                               0.04       2.61 f
+  DP_OP_31J1_122_7992_U11/CO (HA1D1BWP7T35P140)           0.03       2.64 f
+  DP_OP_31J1_122_7992_U10/CO (FA1D1BWP7T35P140)           0.06       2.71 f
+  DP_OP_31J1_122_7992_U9/CO (FA1D1BWP7T35P140)            0.06       2.76 f
+  DP_OP_31J1_122_7992_U8/CO (FA1D1BWP7T35P140)            0.06       2.82 f
+  DP_OP_31J1_122_7992_U7/CO (FA1D1BWP7T35P140)            0.06       2.88 f
+  DP_OP_31J1_122_7992_U6/CO (FA1D1BWP7T35P140)            0.06       2.93 f
+  DP_OP_31J1_122_7992_U5/CO (FA1D1BWP7T35P140)            0.06       2.99 f
+  DP_OP_31J1_122_7992_U4/CO (FA1D1BWP7T35P140)            0.06       3.05 f
+  DP_OP_31J1_122_7992_U3/CO (FA1D1BWP7T35P140)            0.05       3.10 f
+  U129/Z (XOR2D0BWP7T35P140)                              0.03       3.14 r
+  U133/Z (AO21D1BWP7T35P140)                              0.03       3.17 r
+  shiftReg_reg_16_/D (DFCNQD2BWP7T35P140)                 0.00       3.17 r
+  data arrival time                                                  3.17
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_16_/CP (DFCNQD2BWP7T35P140)                0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -3.17
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.80
+
+
+  Startpoint: shiftReg_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: shiftReg_reg_15_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_1_/CP (DFCNQD1BWP7T35P140)                 0.00       2.00 r
+  shiftReg_reg_1_/Q (DFCNQD1BWP7T35P140)                  0.35       2.35 f
+  U73/ZN (NR2D1BWP7T35P140)                               0.10       2.45 r
+  U83/ZN (NR3D0BWP7T35P140)                               0.06       2.51 f
+  U87/Z (AN2D0BWP7T35P140)                                0.06       2.57 f
+  U88/Z (AO21D1BWP7T35P140)                               0.04       2.61 f
+  DP_OP_31J1_122_7992_U11/CO (HA1D1BWP7T35P140)           0.03       2.64 f
+  DP_OP_31J1_122_7992_U10/CO (FA1D1BWP7T35P140)           0.06       2.71 f
+  DP_OP_31J1_122_7992_U9/CO (FA1D1BWP7T35P140)            0.06       2.76 f
+  DP_OP_31J1_122_7992_U8/CO (FA1D1BWP7T35P140)            0.06       2.82 f
+  DP_OP_31J1_122_7992_U7/CO (FA1D1BWP7T35P140)            0.06       2.88 f
+  DP_OP_31J1_122_7992_U6/CO (FA1D1BWP7T35P140)            0.06       2.93 f
+  DP_OP_31J1_122_7992_U5/CO (FA1D1BWP7T35P140)            0.06       2.99 f
+  DP_OP_31J1_122_7992_U4/CO (FA1D1BWP7T35P140)            0.06       3.05 f
+  DP_OP_31J1_122_7992_U3/S (FA1D1BWP7T35P140)             0.09       3.14 r
+  U134/Z (AO21D1BWP7T35P140)                              0.03       3.17 r
+  shiftReg_reg_15_/D (DFCNQD2BWP7T35P140)                 0.00       3.17 r
+  data arrival time                                                  3.17
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_15_/CP (DFCNQD2BWP7T35P140)                0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -3.17
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.80
+
+
+  Startpoint: shiftReg_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: shiftReg_reg_14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_1_/CP (DFCNQD1BWP7T35P140)                 0.00       2.00 r
+  shiftReg_reg_1_/Q (DFCNQD1BWP7T35P140)                  0.35       2.35 f
+  U73/ZN (NR2D1BWP7T35P140)                               0.10       2.45 r
+  U83/ZN (NR3D0BWP7T35P140)                               0.06       2.51 f
+  U87/Z (AN2D0BWP7T35P140)                                0.06       2.57 f
+  U88/Z (AO21D1BWP7T35P140)                               0.04       2.61 f
+  DP_OP_31J1_122_7992_U11/CO (HA1D1BWP7T35P140)           0.03       2.64 f
+  DP_OP_31J1_122_7992_U10/CO (FA1D1BWP7T35P140)           0.06       2.71 f
+  DP_OP_31J1_122_7992_U9/CO (FA1D1BWP7T35P140)            0.06       2.76 f
+  DP_OP_31J1_122_7992_U8/CO (FA1D1BWP7T35P140)            0.06       2.82 f
+  DP_OP_31J1_122_7992_U7/CO (FA1D1BWP7T35P140)            0.06       2.88 f
+  DP_OP_31J1_122_7992_U6/CO (FA1D1BWP7T35P140)            0.06       2.93 f
+  DP_OP_31J1_122_7992_U5/CO (FA1D1BWP7T35P140)            0.06       2.99 f
+  DP_OP_31J1_122_7992_U4/S (FA1D1BWP7T35P140)             0.09       3.08 r
+  U135/Z (AO21D1BWP7T35P140)                              0.03       3.11 r
+  shiftReg_reg_14_/D (DFCNQD2BWP7T35P140)                 0.00       3.11 r
+  data arrival time                                                  3.11
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_14_/CP (DFCNQD2BWP7T35P140)                0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -3.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.86
+
+
+  Startpoint: shiftReg_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: shiftReg_reg_13_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_booth4_1 ZeroWireload tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+  booth4             ZeroWireload          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             2.00       2.00
+  shiftReg_reg_1_/CP (DFCNQD1BWP7T35P140)                 0.00       2.00 r
+  shiftReg_reg_1_/Q (DFCNQD1BWP7T35P140)                  0.35       2.35 f
+  U73/ZN (NR2D1BWP7T35P140)                               0.10       2.45 r
+  U83/ZN (NR3D0BWP7T35P140)                               0.06       2.51 f
+  U87/Z (AN2D0BWP7T35P140)                                0.06       2.57 f
+  U88/Z (AO21D1BWP7T35P140)                               0.04       2.61 f
+  DP_OP_31J1_122_7992_U11/CO (HA1D1BWP7T35P140)           0.03       2.64 f
+  DP_OP_31J1_122_7992_U10/CO (FA1D1BWP7T35P140)           0.06       2.71 f
+  DP_OP_31J1_122_7992_U9/CO (FA1D1BWP7T35P140)            0.06       2.76 f
+  DP_OP_31J1_122_7992_U8/CO (FA1D1BWP7T35P140)            0.06       2.82 f
+  DP_OP_31J1_122_7992_U7/CO (FA1D1BWP7T35P140)            0.06       2.88 f
+  DP_OP_31J1_122_7992_U6/CO (FA1D1BWP7T35P140)            0.06       2.93 f
+  DP_OP_31J1_122_7992_U5/S (FA1D1BWP7T35P140)             0.09       3.02 r
+  U143/ZN (MOAI22D0BWP7T35P140)                           0.04       3.07 r
+  shiftReg_reg_13_/D (DFCNQD2BWP7T35P140)                 0.00       3.07 r
+  data arrival time                                                  3.07
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             2.00      12.00
+  clock uncertainty                                      -1.00      11.00
+  shiftReg_reg_13_/CP (DFCNQD2BWP7T35P140)                0.00      11.00 r
+  library setup time                                     -0.03      10.97
+  data required time                                                10.97
+  --------------------------------------------------------------------------
+  data required time                                                10.97
+  data arrival time                                                 -3.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.90
+
+
+1

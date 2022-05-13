@@ -3,29 +3,29 @@
 Report : area
 Design : SignMultiplier
 Version: L-2016.03-SP1
-Date   : Thu Dec 16 23:57:58 2021
+Date   : Sun Mar 13 16:35:23 2022
 ****************************************
 
 Library(s) Used:
 
-    tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs (File: /root/lib/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db)
+    tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs (File: /mnt/data/projects/ic_lib/tsmc28/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db)
 
-Number of ports:                           40
-Number of nets:                           257
-Number of cells:                          209
-Number of combinational cells:            190
-Number of sequential cells:                18
+Number of ports:                           72
+Number of nets:                           797
+Number of cells:                          641
+Number of combinational cells:            606
+Number of sequential cells:                34
 Number of macros/black boxes:               0
-Number of buf/inv:                         70
-Number of references:                      20
+Number of buf/inv:                        144
+Number of references:                      24
 
-Combinational area:                101.724000
-Buf/Inv area:                       13.720000
-Noncombinational area:              33.124000
+Combinational area:                401.898001
+Buf/Inv area:                       28.321999
+Noncombinational area:              62.916000
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:                   134.848000
+Total cell area:                   464.814000
 Total area:                 undefined
 
 Hierarchical area distribution
@@ -36,9 +36,9 @@ Hierarchical area distribution
 Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
                                   Total      Total    national  national   boxes   Design
 --------------------------------  ---------  -------  --------  ---------  ------  -----------------------------------
-SignMultiplier                     134.8480    100.0  101.7240    31.6540  0.0000  SignMultiplier
-clk_gate_Result_reg                  1.4700      1.1    0.0000     1.4700  0.0000  SNPS_CLOCK_GATE_HIGH_SignMultiplier
+SignMultiplier                     464.8140    100.0  401.8980    61.4460  0.0000  SignMultiplier
+clk_gate_Result_reg                  1.4700      0.3    0.0000     1.4700  0.0000  SNPS_CLOCK_GATE_HIGH_SignMultiplier
 --------------------------------  ---------  -------  --------  ---------  ------  -----------------------------------
-Total                                                 101.7240    33.1240  0.0000
+Total                                                 401.8980    62.9160  0.0000
 
 1

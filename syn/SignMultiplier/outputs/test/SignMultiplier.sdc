@@ -1,6 +1,6 @@
 ###################################################################
 
-# Created by write_sdc on Thu Dec 16 23:57:58 2021
+# Created by write_sdc on Sun Mar 13 16:35:23 2022
 
 ###################################################################
 set sdc_version 2.0
@@ -9,6 +9,22 @@ set_units -time ns -resistance kOhm -capacitance pF -voltage V -current mA
 set_max_transition 2 [current_design]
 set_max_fanout 20 [current_design]
 set_max_capacitance 0.4 [current_design]
+set_load -pin_load 0.05 [get_ports {io_dout[31]}]
+set_load -pin_load 0.05 [get_ports {io_dout[30]}]
+set_load -pin_load 0.05 [get_ports {io_dout[29]}]
+set_load -pin_load 0.05 [get_ports {io_dout[28]}]
+set_load -pin_load 0.05 [get_ports {io_dout[27]}]
+set_load -pin_load 0.05 [get_ports {io_dout[26]}]
+set_load -pin_load 0.05 [get_ports {io_dout[25]}]
+set_load -pin_load 0.05 [get_ports {io_dout[24]}]
+set_load -pin_load 0.05 [get_ports {io_dout[23]}]
+set_load -pin_load 0.05 [get_ports {io_dout[22]}]
+set_load -pin_load 0.05 [get_ports {io_dout[21]}]
+set_load -pin_load 0.05 [get_ports {io_dout[20]}]
+set_load -pin_load 0.05 [get_ports {io_dout[19]}]
+set_load -pin_load 0.05 [get_ports {io_dout[18]}]
+set_load -pin_load 0.05 [get_ports {io_dout[17]}]
+set_load -pin_load 0.05 [get_ports {io_dout[16]}]
 set_load -pin_load 0.05 [get_ports {io_dout[15]}]
 set_load -pin_load 0.05 [get_ports {io_dout[14]}]
 set_load -pin_load 0.05 [get_ports {io_dout[13]}]
@@ -34,19 +50,38 @@ set_clock_transition -max -rise 1 [get_clocks clk]
 set_clock_transition -max -fall 1 [get_clocks clk]
 set_clock_transition -min -rise 1 [get_clocks clk]
 set_clock_transition -min -fall 1 [get_clocks clk]
-group_path -name INPUT_GROUP  -from [list [get_ports {io_dinA[7]}] [get_ports {io_dinA[6]}] [get_ports      \
-{io_dinA[5]}] [get_ports {io_dinA[4]}] [get_ports {io_dinA[3]}] [get_ports     \
-{io_dinA[2]}] [get_ports {io_dinA[1]}] [get_ports {io_dinA[0]}] [get_ports     \
-{io_dinB[7]}] [get_ports {io_dinB[6]}] [get_ports {io_dinB[5]}] [get_ports     \
-{io_dinB[4]}] [get_ports {io_dinB[3]}] [get_ports {io_dinB[2]}] [get_ports     \
-{io_dinB[1]}] [get_ports {io_dinB[0]}] [get_ports io_din_vld] [get_ports clk]  \
-[get_ports resetn]]
-group_path -name OUTPUT_GROUP  -to [list [get_ports {io_dout[15]}] [get_ports {io_dout[14]}] [get_ports      \
-{io_dout[13]}] [get_ports {io_dout[12]}] [get_ports {io_dout[11]}] [get_ports  \
-{io_dout[10]}] [get_ports {io_dout[9]}] [get_ports {io_dout[8]}] [get_ports    \
-{io_dout[7]}] [get_ports {io_dout[6]}] [get_ports {io_dout[5]}] [get_ports     \
-{io_dout[4]}] [get_ports {io_dout[3]}] [get_ports {io_dout[2]}] [get_ports     \
-{io_dout[1]}] [get_ports {io_dout[0]}] [get_ports io_dout_vld]]
+group_path -name INPUT_GROUP  -from [list [get_ports {io_dinA[15]}] [get_ports {io_dinA[14]}] [get_ports    \
+{io_dinA[13]}] [get_ports {io_dinA[12]}] [get_ports {io_dinA[11]}] [get_ports  \
+{io_dinA[10]}] [get_ports {io_dinA[9]}] [get_ports {io_dinA[8]}] [get_ports    \
+{io_dinA[7]}] [get_ports {io_dinA[6]}] [get_ports {io_dinA[5]}] [get_ports     \
+{io_dinA[4]}] [get_ports {io_dinA[3]}] [get_ports {io_dinA[2]}] [get_ports     \
+{io_dinA[1]}] [get_ports {io_dinA[0]}] [get_ports {io_dinB[15]}] [get_ports    \
+{io_dinB[14]}] [get_ports {io_dinB[13]}] [get_ports {io_dinB[12]}] [get_ports  \
+{io_dinB[11]}] [get_ports {io_dinB[10]}] [get_ports {io_dinB[9]}] [get_ports   \
+{io_dinB[8]}] [get_ports {io_dinB[7]}] [get_ports {io_dinB[6]}] [get_ports     \
+{io_dinB[5]}] [get_ports {io_dinB[4]}] [get_ports {io_dinB[3]}] [get_ports     \
+{io_dinB[2]}] [get_ports {io_dinB[1]}] [get_ports {io_dinB[0]}] [get_ports     \
+io_din_vld] [get_ports clk] [get_ports resetn]]
+group_path -name OUTPUT_GROUP  -to [list [get_ports {io_dout[31]}] [get_ports {io_dout[30]}] [get_ports      \
+{io_dout[29]}] [get_ports {io_dout[28]}] [get_ports {io_dout[27]}] [get_ports  \
+{io_dout[26]}] [get_ports {io_dout[25]}] [get_ports {io_dout[24]}] [get_ports  \
+{io_dout[23]}] [get_ports {io_dout[22]}] [get_ports {io_dout[21]}] [get_ports  \
+{io_dout[20]}] [get_ports {io_dout[19]}] [get_ports {io_dout[18]}] [get_ports  \
+{io_dout[17]}] [get_ports {io_dout[16]}] [get_ports {io_dout[15]}] [get_ports  \
+{io_dout[14]}] [get_ports {io_dout[13]}] [get_ports {io_dout[12]}] [get_ports  \
+{io_dout[11]}] [get_ports {io_dout[10]}] [get_ports {io_dout[9]}] [get_ports   \
+{io_dout[8]}] [get_ports {io_dout[7]}] [get_ports {io_dout[6]}] [get_ports     \
+{io_dout[5]}] [get_ports {io_dout[4]}] [get_ports {io_dout[3]}] [get_ports     \
+{io_dout[2]}] [get_ports {io_dout[1]}] [get_ports {io_dout[0]}] [get_ports     \
+io_dout_vld]]
+set_input_delay -clock clk  4  [get_ports {io_dinA[15]}]
+set_input_delay -clock clk  4  [get_ports {io_dinA[14]}]
+set_input_delay -clock clk  4  [get_ports {io_dinA[13]}]
+set_input_delay -clock clk  4  [get_ports {io_dinA[12]}]
+set_input_delay -clock clk  4  [get_ports {io_dinA[11]}]
+set_input_delay -clock clk  4  [get_ports {io_dinA[10]}]
+set_input_delay -clock clk  4  [get_ports {io_dinA[9]}]
+set_input_delay -clock clk  4  [get_ports {io_dinA[8]}]
 set_input_delay -clock clk  4  [get_ports {io_dinA[7]}]
 set_input_delay -clock clk  4  [get_ports {io_dinA[6]}]
 set_input_delay -clock clk  4  [get_ports {io_dinA[5]}]
@@ -55,6 +90,14 @@ set_input_delay -clock clk  4  [get_ports {io_dinA[3]}]
 set_input_delay -clock clk  4  [get_ports {io_dinA[2]}]
 set_input_delay -clock clk  4  [get_ports {io_dinA[1]}]
 set_input_delay -clock clk  4  [get_ports {io_dinA[0]}]
+set_input_delay -clock clk  4  [get_ports {io_dinB[15]}]
+set_input_delay -clock clk  4  [get_ports {io_dinB[14]}]
+set_input_delay -clock clk  4  [get_ports {io_dinB[13]}]
+set_input_delay -clock clk  4  [get_ports {io_dinB[12]}]
+set_input_delay -clock clk  4  [get_ports {io_dinB[11]}]
+set_input_delay -clock clk  4  [get_ports {io_dinB[10]}]
+set_input_delay -clock clk  4  [get_ports {io_dinB[9]}]
+set_input_delay -clock clk  4  [get_ports {io_dinB[8]}]
 set_input_delay -clock clk  4  [get_ports {io_dinB[7]}]
 set_input_delay -clock clk  4  [get_ports {io_dinB[6]}]
 set_input_delay -clock clk  4  [get_ports {io_dinB[5]}]
@@ -65,6 +108,22 @@ set_input_delay -clock clk  4  [get_ports {io_dinB[1]}]
 set_input_delay -clock clk  4  [get_ports {io_dinB[0]}]
 set_input_delay -clock clk  4  [get_ports io_din_vld]
 set_input_delay -clock clk  4  [get_ports resetn]
+set_output_delay -clock clk  6  [get_ports {io_dout[31]}]
+set_output_delay -clock clk  6  [get_ports {io_dout[30]}]
+set_output_delay -clock clk  6  [get_ports {io_dout[29]}]
+set_output_delay -clock clk  6  [get_ports {io_dout[28]}]
+set_output_delay -clock clk  6  [get_ports {io_dout[27]}]
+set_output_delay -clock clk  6  [get_ports {io_dout[26]}]
+set_output_delay -clock clk  6  [get_ports {io_dout[25]}]
+set_output_delay -clock clk  6  [get_ports {io_dout[24]}]
+set_output_delay -clock clk  6  [get_ports {io_dout[23]}]
+set_output_delay -clock clk  6  [get_ports {io_dout[22]}]
+set_output_delay -clock clk  6  [get_ports {io_dout[21]}]
+set_output_delay -clock clk  6  [get_ports {io_dout[20]}]
+set_output_delay -clock clk  6  [get_ports {io_dout[19]}]
+set_output_delay -clock clk  6  [get_ports {io_dout[18]}]
+set_output_delay -clock clk  6  [get_ports {io_dout[17]}]
+set_output_delay -clock clk  6  [get_ports {io_dout[16]}]
 set_output_delay -clock clk  6  [get_ports {io_dout[15]}]
 set_output_delay -clock clk  6  [get_ports {io_dout[14]}]
 set_output_delay -clock clk  6  [get_ports {io_dout[13]}]
@@ -82,6 +141,22 @@ set_output_delay -clock clk  6  [get_ports {io_dout[2]}]
 set_output_delay -clock clk  6  [get_ports {io_dout[1]}]
 set_output_delay -clock clk  6  [get_ports {io_dout[0]}]
 set_output_delay -clock clk  6  [get_ports io_dout_vld]
+set_input_transition -max 1  [get_ports {io_dinA[15]}]
+set_input_transition -min 1  [get_ports {io_dinA[15]}]
+set_input_transition -max 1  [get_ports {io_dinA[14]}]
+set_input_transition -min 1  [get_ports {io_dinA[14]}]
+set_input_transition -max 1  [get_ports {io_dinA[13]}]
+set_input_transition -min 1  [get_ports {io_dinA[13]}]
+set_input_transition -max 1  [get_ports {io_dinA[12]}]
+set_input_transition -min 1  [get_ports {io_dinA[12]}]
+set_input_transition -max 1  [get_ports {io_dinA[11]}]
+set_input_transition -min 1  [get_ports {io_dinA[11]}]
+set_input_transition -max 1  [get_ports {io_dinA[10]}]
+set_input_transition -min 1  [get_ports {io_dinA[10]}]
+set_input_transition -max 1  [get_ports {io_dinA[9]}]
+set_input_transition -min 1  [get_ports {io_dinA[9]}]
+set_input_transition -max 1  [get_ports {io_dinA[8]}]
+set_input_transition -min 1  [get_ports {io_dinA[8]}]
 set_input_transition -max 1  [get_ports {io_dinA[7]}]
 set_input_transition -min 1  [get_ports {io_dinA[7]}]
 set_input_transition -max 1  [get_ports {io_dinA[6]}]
@@ -98,6 +173,22 @@ set_input_transition -max 1  [get_ports {io_dinA[1]}]
 set_input_transition -min 1  [get_ports {io_dinA[1]}]
 set_input_transition -max 1  [get_ports {io_dinA[0]}]
 set_input_transition -min 1  [get_ports {io_dinA[0]}]
+set_input_transition -max 1  [get_ports {io_dinB[15]}]
+set_input_transition -min 1  [get_ports {io_dinB[15]}]
+set_input_transition -max 1  [get_ports {io_dinB[14]}]
+set_input_transition -min 1  [get_ports {io_dinB[14]}]
+set_input_transition -max 1  [get_ports {io_dinB[13]}]
+set_input_transition -min 1  [get_ports {io_dinB[13]}]
+set_input_transition -max 1  [get_ports {io_dinB[12]}]
+set_input_transition -min 1  [get_ports {io_dinB[12]}]
+set_input_transition -max 1  [get_ports {io_dinB[11]}]
+set_input_transition -min 1  [get_ports {io_dinB[11]}]
+set_input_transition -max 1  [get_ports {io_dinB[10]}]
+set_input_transition -min 1  [get_ports {io_dinB[10]}]
+set_input_transition -max 1  [get_ports {io_dinB[9]}]
+set_input_transition -min 1  [get_ports {io_dinB[9]}]
+set_input_transition -max 1  [get_ports {io_dinB[8]}]
+set_input_transition -min 1  [get_ports {io_dinB[8]}]
 set_input_transition -max 1  [get_ports {io_dinB[7]}]
 set_input_transition -min 1  [get_ports {io_dinB[7]}]
 set_input_transition -max 1  [get_ports {io_dinB[6]}]

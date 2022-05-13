@@ -1,0 +1,134 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.5.6 (Oracle Corporation Java 1.8.0_321)
+[debug] Load.defaultLoad until apply took 445.9795ms
+[debug]                 Load.loadUnit: plugins took 71.308378ms
+[debug]                 Load.loadUnit: defsScala took 0.398754ms
+[debug] [Loading] Scanning directory /mnt/data/projects/kws/Easonlib/project/project
+[debug]                   Load.loadUnit: mkEval took 9.332546ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /mnt/data/projects/kws/Easonlib/project/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 13.646814 ms
+[info] loading settings for project easonlib-build-build from metals.sbt ...
+[debug]                     Load.resolveProject(easonlib-build-build) took 40.081867ms
+[debug]                   Load.loadTransitive: finalizeProject(Project(id easonlib-build-build, base: /mnt/data/projects/kws/Easonlib/project/project, plugins: List(<none>))) took 73.281097ms
+[debug] [Loading] Done in /mnt/data/projects/kws/Easonlib/project/project, returning: (easonlib-build-build)
+[debug]                 Load.loadUnit: loadedProjectsRaw took 391.111629ms
+[debug]                 Load.loadUnit: cleanEvalClasses took 4.614414ms
+[debug]               Load.loadUnit(file:/mnt/data/projects/kws/Easonlib/project/project/, ...) took 472.774506ms
+[debug]             Load.apply: load took 561.010415ms
+[debug]             Load.apply: resolveProjects took 4.339167ms
+[debug]             Load.apply: finalTransforms took 54.72414ms
+[debug]             Load.apply: config.delegates took 6.743299ms
+[debug]             Load.apply: Def.make(settings)... took 304.259551ms
+[debug]             Load.apply: structureIndex took 86.31577ms
+[debug]             Load.apply: mkStreams took 1.695988ms
+[info] loading project definition from /mnt/data/projects/kws/Easonlib/project/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]           Load.loadUnit: plugins took 1868.883634ms
+[debug]           Load.loadUnit: defsScala took 0.004401ms
+[debug] [Loading] Scanning directory /mnt/data/projects/kws/Easonlib/project
+[debug]             Load.loadUnit: mkEval took 0.23805ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /mnt/data/projects/kws/Easonlib/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(bloop.integrations.sbt.BloopPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(bloop.integrations.sbt.BloopPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,bloop.integrations.sbt.BloopPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.50431 ms
+[info] loading settings for project easonlib-build from metals.sbt ...
+[debug]               Load.resolveProject(easonlib-build) took 20.605933ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id easonlib-build, base: /mnt/data/projects/kws/Easonlib/project, plugins: List(<none>))) took 23.753411ms
+[debug] [Loading] Done in /mnt/data/projects/kws/Easonlib/project, returning: (easonlib-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 32.636727ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.527786ms
+[debug]         Load.loadUnit(file:/mnt/data/projects/kws/Easonlib/project/, ...) took 1902.835004ms
+[debug]       Load.apply: load took 1904.509044ms
+[debug]       Load.apply: resolveProjects took 0.146117ms
+[debug]       Load.apply: finalTransforms took 16.571271ms
+[debug]       Load.apply: config.delegates took 0.452415ms
+[debug]       Load.apply: Def.make(settings)... took 73.224604ms
+[debug]       Load.apply: structureIndex took 19.505824ms
+[debug]       Load.apply: mkStreams took 0.002683ms
+[info] loading project definition from /mnt/data/projects/kws/Easonlib/project
+[debug] Evaluating tasks: bloopInstall
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[success] Generated .bloop/easonlib-build.json
+[success] Total time: 2 s, completed 11/05/2022 8:54:35 PM
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 3760.669284ms
+[debug]     Load.loadUnit: defsScala took 0.002843ms
+[debug] [Loading] Scanning directory /mnt/data/projects/kws/Easonlib
+[debug]       Load.loadUnit: mkEval took 0.127583ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /mnt/data/projects/kws/Easonlib, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(bloop.integrations.sbt.BloopPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(bloop.integrations.sbt.BloopPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,bloop.integrations.sbt.BloopPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.264792 ms
+[info] loading settings for project easonlib from build.sbt ...
+[debug]         Load.resolveProject(easonlib) took 14.460897ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id easonlib, base: /mnt/data/projects/kws/Easonlib, plugins: List(<none>))) took 16.139514ms
+[debug] [Loading] Done in /mnt/data/projects/kws/Easonlib, returning: (easonlib)
+[debug]     Load.loadUnit: loadedProjectsRaw took 75.928766ms
+[debug]     Load.loadUnit: cleanEvalClasses took 0.713531ms
+[debug]   Load.loadUnit(file:/mnt/data/projects/kws/Easonlib/, ...) took 3838.315138ms
+[debug] Load.apply: load took 3856.678396ms
+[debug] Load.apply: resolveProjects took 0.090912ms
+[debug] Load.apply: finalTransforms took 8.423848ms
+[debug] Load.apply: config.delegates took 0.281239ms
+[debug] Load.apply: Def.make(settings)... took 62.336246ms
+[debug] Load.apply: structureIndex took 18.24705ms
+[debug] Load.apply: mkStreams took 0.002473ms
+[info] set current project to Easonlib (in build file:/mnt/data/projects/kws/Easonlib/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(bloopInstall, None, None)
+[debug] Evaluating tasks: bloopInstall
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true

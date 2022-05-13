@@ -1,0 +1,102 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : booth4
+Version: L-2016.03-SP1
+Date   : Fri May 13 11:53:45 2022
+****************************************
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   cal_en_regNext_reg/D         3.06           2.14 f        -0.93  (VIOLATED)
+   cal_cnt_reg_0_/D             3.07           2.15 f        -0.92  (VIOLATED)
+   cal_cnt_reg_1_/D             3.07           2.17 f        -0.91  (VIOLATED)
+   cal_en_reg/D                 3.07           2.18 f        -0.89  (VIOLATED)
+   shiftReg_reg_8_/D            3.08           2.22 f        -0.85  (VIOLATED)
+   shiftReg_reg_7_/D            3.08           2.23 f        -0.85  (VIOLATED)
+   shiftReg_reg_9_/D            3.07           2.24 f        -0.83  (VIOLATED)
+   shiftReg_reg_10_/D           3.07           2.24 f        -0.83  (VIOLATED)
+   shiftReg_reg_11_/D           3.07           2.24 f        -0.83  (VIOLATED)
+   shiftReg_reg_12_/D           3.07           2.24 f        -0.83  (VIOLATED)
+   shiftReg_reg_13_/D           3.07           2.24 f        -0.83  (VIOLATED)
+   clk_gate_shiftReg_reg/latch/E
+                                3.00           2.17 r        -0.83  (VIOLATED)
+   shiftReg_reg_14_/D           3.08           2.26 f        -0.81  (VIOLATED)
+   shiftReg_reg_15_/D           3.08           2.26 f        -0.81  (VIOLATED)
+   shiftReg_reg_16_/D           3.08           2.26 f        -0.81  (VIOLATED)
+   shiftReg_reg_1_/D            3.07           2.45 f        -0.62  (VIOLATED)
+   shiftReg_reg_2_/D            3.07           2.45 f        -0.62  (VIOLATED)
+   shiftReg_reg_3_/D            3.07           2.45 f        -0.62  (VIOLATED)
+   shiftReg_reg_4_/D            3.07           2.45 f        -0.62  (VIOLATED)
+   shiftReg_reg_5_/D            3.07           2.45 f        -0.62  (VIOLATED)
+   shiftReg_reg_6_/D            3.07           2.45 f        -0.62  (VIOLATED)
+   shiftReg_reg_0_/D            3.07           2.46 f        -0.61  (VIOLATED)
+
+
+   max_transition
+
+                             Required        Actual
+   Net                      Transition     Transition        Slack
+   -----------------------------------------------------------------
+   io_dinA[0]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U116/I1          0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[1]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U120/I1          0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[2]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U117/I1          0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[3]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U121/I1          0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[4]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U118/I1          0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[5]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U119/I1          0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[6]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U125/B2          0.44           1.00          -0.56  (VIOLATED)
+   io_dinA[7]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U124/C1          0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[0]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   Breg_reg_0_/D
+                                0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[1]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   Breg_reg_1_/D
+                                0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[2]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   Breg_reg_2_/D
+                                0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[3]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   Breg_reg_3_/D
+                                0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[4]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   Breg_reg_4_/D
+                                0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[5]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   Breg_reg_5_/D
+                                0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[6]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   Breg_reg_6_/D
+                                0.44           1.00          -0.56  (VIOLATED)
+   io_dinB[7]                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   Breg_reg_7_/D
+                                0.44           1.00          -0.56  (VIOLATED)
+   io_din_vld                   0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U52/I            0.44           1.00          -0.56  (VIOLATED)
+   resetn                       0.44           1.00          -0.56  (VIOLATED)
+       PIN :   U54/I            0.44           1.00          -0.56  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      18                -10.07  
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   booth4                       0.00        3172.39       -3172.39  (VIOLATED)
+
+
+1

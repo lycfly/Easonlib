@@ -1,6 +1,6 @@
-// Generator : SpinalHDL v1.6.1    git head : 3bf789d53b1b5a36974196e2d591342e15ddf28c
+// Generator : SpinalHDL v1.6.4    git head : 598c18959149eb18e5eee5b0aa3eef01ecaa41a1
 // Component : SignMultiplier
-// Git hash  : 3663ba7d2e85ff08615a5459721c2d80dbec83b9
+// Git hash  : 6bea6bb7df6fd9185f6024fe72178a5f7d526d6e
 
 `timescale 1ns/1ps 
 

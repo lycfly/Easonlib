@@ -5,13 +5,13 @@ Report : power
         -verbose
 Design : SignMultiplier
 Version: L-2016.03-SP1
-Date   : Thu Dec 16 23:57:58 2021
+Date   : Sun Mar 13 16:35:23 2022
 ****************************************
 
 
 Library(s) Used:
 
-    tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs (File: /root/lib/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db)
+    tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs (File: /mnt/data/projects/ic_lib/tsmc28/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db)
 
 
 Operating Conditions: ssg0p81v125c   Library: tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
@@ -33,12 +33,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =   8.9336 uW   (64%)
-  Net Switching Power  =   4.9299 uW   (36%)
+  Cell Internal Power  =  25.6125 uW   (61%)
+  Net Switching Power  =  16.1301 uW   (39%)
                          ---------
-Total Dynamic Power    =  13.8636 uW  (100%)
+Total Dynamic Power    =  41.7427 uW  (100%)
 
-Cell Leakage Power     =   2.8673 uW
+Cell Leakage Power     =   9.6229 uW
 
                  Internal         Switching           Leakage            Total                         Cell
 Power Group      Power            Power               Power              Power   (   %    )  Attrs  Count
@@ -46,10 +46,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
-clock_network  7.3165e-04        3.1816e-04           40.7524        1.0906e-03  (   6.52%)            1
-register       5.4184e-03        2.6542e-03          717.9942        8.7906e-03  (  52.54%)            17
+clock_network  7.2773e-04        6.2964e-04           40.7598        1.3981e-03  (   2.72%)            1
+register       1.0818e-02        6.0274e-03        1.3979e+03        1.8243e-02  (  35.52%)            33
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
-combinational  2.7836e-03        1.9575e-03        2.1086e+03        6.8497e-03  (  40.94%)            189
+combinational  1.4067e-02        9.4731e-03        8.1842e+03        3.1724e-02  (  61.76%)            605
 ---------------------------------------------------------------------------------------------------------
-Total          8.9336e-03 mW     4.9299e-03 mW     2.8673e+03 nW     1.6731e-02 mW
+Total          2.5613e-02 mW     1.6130e-02 mW     9.6229e+03 nW     5.1366e-02 mW
 1

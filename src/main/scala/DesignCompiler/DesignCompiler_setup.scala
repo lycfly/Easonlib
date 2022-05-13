@@ -138,6 +138,7 @@ case class DesignCompiler_setup (Setup_config: DesignCompiler_config){
     report_power -verbose                                     > ./rpt/$date/${TOP_MODULE}_total_power.rpt
     report_clock_gating -gated -verbose                       > ./rpt/$date/${TOP_MODULE}_clock_gating_gated.rpt
     report_clock_gating -ungated -verbose                     > ./rpt/$date/${TOP_MODULE}_clock_gating_ungated.rpt
+    exit
     """
     script
   }

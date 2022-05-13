@@ -1,4 +1,7 @@
 
+Warning:  Site Information is not available ... Have you run install_site?
+
+
                            Design Compiler Graphical 
                                  DC Ultra (TM)
                                   DFTMAX (TM)
@@ -45,10 +48,10 @@ set compile_seqmap_identify_shift_registers_with_synchronous_logic false
 false
 set timing_enable_multiple_clocks_per_reg true
 true
-set lib_path          "/root/lib"
-/root/lib
+set lib_path          "/mnt/data/projects/ic_lib/tsmc28"
+/mnt/data/projects/ic_lib/tsmc28
 set search_path       ". $lib_path"
-. /root/lib
+. /mnt/data/projects/ic_lib/tsmc28
 set target_library    "tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db                             "
 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db                             
 set synthetic_library "dw_foundation.sldb"
@@ -64,30 +67,30 @@ set auto_insert_level_shifters_on_clocks      all
 all
 set auto_insert_level_shifters true
 true
-analyze -format verilog "/mnt/mydata/Easonlib/syn/SignMultiplier/SignMultiplier.v"  -define DC_SYN
+analyze -format verilog "/mnt/data/projects/kws/Easonlib/syn/SignMultiplier/SignMultiplier.v"  -define DC_SYN
 Running PRESTO HDLC
-Compiling source file /mnt/mydata/Easonlib/syn/SignMultiplier/SignMultiplier.v
+Compiling source file /mnt/data/projects/kws/Easonlib/syn/SignMultiplier/SignMultiplier.v
 Presto compilation completed successfully.
-Loading db file '/root/lib/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db'
+Loading db file '/mnt/data/projects/ic_lib/tsmc28/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db'
 Information: Using CCS timing libraries. (TIM-024)
-Loading db file '/usr/synopsys/dc-L-2016.03-SP1/libraries/syn/dw_foundation.sldb'
+Loading db file '/home/lyc/Synopsys/dc2016/libraries/syn/dw_foundation.sldb'
 1
 elaborate       $TOP_MODULE
-Loading db file '/usr/synopsys/dc-L-2016.03-SP1/libraries/syn/gtech.db'
-Loading db file '/usr/synopsys/dc-L-2016.03-SP1/libraries/syn/standard.sldb'
+Loading db file '/home/lyc/Synopsys/dc2016/libraries/syn/gtech.db'
+Loading db file '/home/lyc/Synopsys/dc2016/libraries/syn/standard.sldb'
   Loading link library 'tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs'
   Loading link library 'gtech'
 Running PRESTO HDLC
-Warning:  /mnt/mydata/Easonlib/syn/SignMultiplier/SignMultiplier.v:29: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/data/projects/kws/Easonlib/syn/SignMultiplier/SignMultiplier.v:29: signed to unsigned assignment occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine SignMultiplier line 22 in file
-		'/mnt/mydata/Easonlib/syn/SignMultiplier/SignMultiplier.v'.
+		'/mnt/data/projects/kws/Easonlib/syn/SignMultiplier/SignMultiplier.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
 |  dout_vld_reg_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
-|     Result_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     Result_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
 Elaborated 1 design.
@@ -101,9 +104,9 @@ link
   Linking design 'SignMultiplier'
   Using the following designs and libraries:
   --------------------------------------------------------------------------
-  SignMultiplier              /mnt/mydata/Easonlib/syn/SignMultiplier/SignMultiplier.db
-  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs (library) /root/lib/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db
-  dw_foundation.sldb (library) /usr/synopsys/dc-L-2016.03-SP1/libraries/syn/dw_foundation.sldb
+  SignMultiplier              /mnt/data/projects/kws/Easonlib/syn/SignMultiplier/SignMultiplier.db
+  tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs (library) /mnt/data/projects/ic_lib/tsmc28/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db
+  dw_foundation.sldb (library) /home/lyc/Synopsys/dc2016/libraries/syn/dw_foundation.sldb
 
 1
 source -e -v "constraint.tcl"
@@ -124,7 +127,7 @@ set     MAX_TRAN                        2.0
 set     PERIOD                          10
 10
 set ALL_IN_EX_CLK       [remove_from_collection [all_inputs] [get_ports clk]]
-{io_dinA[7] io_dinA[6] io_dinA[5] io_dinA[4] io_dinA[3] io_dinA[2] io_dinA[1] io_dinA[0] io_dinB[7] io_dinB[6] io_dinB[5] io_dinB[4] io_dinB[3] io_dinB[2] io_dinB[1] io_dinB[0] io_din_vld resetn}
+{io_dinA[15] io_dinA[14] io_dinA[13] io_dinA[12] io_dinA[11] io_dinA[10] io_dinA[9] io_dinA[8] io_dinA[7] io_dinA[6] io_dinA[5] io_dinA[4] io_dinA[3] io_dinA[2] io_dinA[1] io_dinA[0] io_dinB[15] io_dinB[14] io_dinB[13] io_dinB[12] io_dinB[11] io_dinB[10] io_dinB[9] io_dinB[8] io_dinB[7] io_dinB[6] io_dinB[5] io_dinB[4] io_dinB[3] io_dinB[2] io_dinB[1] io_dinB[0] io_din_vld resetn}
 set ALL_EX_OUT          [remove_from_collection [current_design] [all_outputs]]
 Current design is 'SignMultiplier'.
 {SignMultiplier}
@@ -159,13 +162,15 @@ set_max_capacitance             $MAX_CAP                 $ALL_EX_OUT_IN
 1
 report_clock
 Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'ZeroWireload'. (OPT-170)
 Information: Updating graph... (UID-83)
  
 ****************************************
 Report : clocks
 Design : SignMultiplier
 Version: L-2016.03-SP1
-Date   : Thu Dec 16 23:57:41 2021
+Date   : Sun Mar 13 16:35:00 2022
 ****************************************
 
 Attributes:
@@ -256,7 +261,7 @@ Information: State dependent leakage is now switched from on to off.
  Implement Synthetic for 'SignMultiplier'.
   Processing 'SNPS_CLOCK_GATE_HIGH_SignMultiplier'
   Mapping integrated clock gating circuitry
-Memory usage for J1 task 1328 Mbytes -- main task 1328 Mbytes.
+Memory usage for J1 task 1329 Mbytes -- main task 1329 Mbytes.
 
   Updating timing information
 Information: Updating design information... (UID-85)
@@ -306,6 +311,7 @@ Information: Added key list 'DesignWare' to design 'SignMultiplier'. (DDB-72)
   Global Optimization (Phase 26)
   Global Optimization (Phase 27)
   Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
 
   Beginning Isolate Ports
   -----------------------
@@ -317,33 +323,33 @@ Information: Added key list 'DesignWare' to design 'SignMultiplier'. (DDB-72)
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:06     129.6      0.00       0.0      10.1                           2826.4414
-    0:00:06     129.6      0.00       0.0      10.1                           2826.4414
-    0:00:06     129.6      0.00       0.0      10.1                           2826.4414
-    0:00:06     129.6      0.00       0.0      10.1                           2826.4414
+    0:00:09     454.1      0.00       0.0      19.0                           9116.5137
+    0:00:09     454.1      0.00       0.0      19.0                           9116.5137
+    0:00:09     454.1      0.00       0.0      19.0                           9116.5137
+    0:00:09     454.1      0.00       0.0      19.0                           9116.5137
 
   Beginning WLM Backend Optimization
   --------------------------------------
-    0:00:06     129.1      0.00       0.0      10.1                           2802.8872
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+    0:00:09     452.4      0.00       0.0      19.0                           8991.6709
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
 
 
   Beginning Design Rule Fixing  (max_transition)
@@ -353,12 +359,12 @@ Information: Added key list 'DesignWare' to design 'SignMultiplier'. (DDB-72)
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-  Global Optimization (Phase 29)
+    0:00:10     451.8      0.00       0.0      19.0                           8941.1523
   Global Optimization (Phase 30)
   Global Optimization (Phase 31)
-    0:00:07     134.8      0.00       0.0      10.1                           2899.1211
-    0:00:07     134.8      0.00       0.0      10.1                           2899.1211
+  Global Optimization (Phase 32)
+    0:00:10     464.4      0.00       0.0      19.0                           9257.5742
+    0:00:10     464.4      0.00       0.0      19.0                           9257.5742
 
 
   Beginning Leakage Power Optimization  (max_leakage_power 0)
@@ -368,8 +374,7 @@ Information: Added key list 'DesignWare' to design 'SignMultiplier'. (DDB-72)
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:07     134.8      0.00       0.0      10.1                           2899.1211
-  Global Optimization (Phase 32)
+    0:00:10     464.4      0.00       0.0      19.0                           9257.5742
   Global Optimization (Phase 33)
   Global Optimization (Phase 34)
   Global Optimization (Phase 35)
@@ -382,43 +387,44 @@ Information: Added key list 'DesignWare' to design 'SignMultiplier'. (DDB-72)
   Global Optimization (Phase 42)
   Global Optimization (Phase 43)
   Global Optimization (Phase 44)
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
+  Global Optimization (Phase 45)
+    0:00:10     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:10     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:10     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
 
                                   TOTAL                                                
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:07     128.2      0.00       0.0      10.1                           2730.5828
-    0:00:08     134.8      0.00       0.0      10.1                           2899.1211
-    0:00:08     134.8      0.00       0.0      10.1                           2899.1211
-    0:00:08     134.8      0.00       0.0      10.1                           2899.1211
-    0:00:08     134.8      0.00       0.0      10.1                           2899.1211
-Loading db file '/root/lib/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db'
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     452.3      0.00       0.0      19.0                           8950.2402
+    0:00:11     464.8      0.00       0.0      19.0                           9267.4883
+    0:00:11     464.8      0.00       0.0      19.0                           9267.4883
+    0:00:12     464.8      0.00       0.0      19.0                           9267.4883
+    0:00:12     464.8      0.00       0.0      19.0                           9267.4883
+Loading db file '/mnt/data/projects/ic_lib/tsmc28/tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db'
 
 
 Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
@@ -443,7 +449,7 @@ write -format ddc     -hierarchy -output ./outputs/$date/${TOP_MODULE}.ddc
 Writing ddc file './outputs/test/SignMultiplier.ddc'.
 1
 write -format verilog -hierarchy -output ./outputs/$date/${TOP_MODULE}.v
-Writing verilog file '/mnt/mydata/Easonlib/syn/SignMultiplier/outputs/test/SignMultiplier.v'.
+Writing verilog file '/mnt/data/projects/kws/Easonlib/syn/SignMultiplier/outputs/test/SignMultiplier.v'.
 1
 write_link_library -out                  ./outputs/$date/link_library.txt
 1
@@ -465,8 +471,8 @@ report_power -verbose                                     > ./rpt/$date/${TOP_MO
 report_clock_gating -gated -verbose                       > ./rpt/$date/${TOP_MODULE}_clock_gating_gated.rpt
 report_clock_gating -ungated -verbose                     > ./rpt/$date/${TOP_MODULE}_clock_gating_ungated.rpt
 dc_shell> 
-Memory usage for main task 1328 Mbytes.
-Memory usage for this session 1328 Mbytes.
-CPU usage for this session 19 seconds ( 0.01 hours ).
+Memory usage for main task 1329 Mbytes.
+Memory usage for this session 1329 Mbytes.
+CPU usage for this session 30 seconds ( 0.01 hours ).
 
 Thank you...

@@ -17,11 +17,9 @@ class DesignCompilerFlow[T <: Component](
                                   workspacePath: String,
                                   DCConfig: DesignCompiler_config,
                                   Date_mode: Boolean = false,
-//                                  vivadoTask: VivadoTask,
                                   force: Boolean = false,
                                   sdcPath: String = "",
                                   designPath:String = ""
-//                                  constraint: VivadoConstraint = VivadoConstraint() // no constraint by default
                                 ) {
 
   import DesignCompiler_config._

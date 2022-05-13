@@ -1,0 +1,458 @@
+ 
+****************************************
+Report : cell
+Design : booth4
+Version: L-2016.03-SP1
+Date   : Fri May 13 11:53:45 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   cg - clock gating logic
+    h - hierarchical
+   mo - map_only
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+Breg_reg_0_               DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+Breg_reg_1_               DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+Breg_reg_2_               DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+Breg_reg_3_               DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+Breg_reg_4_               DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+Breg_reg_5_               DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+Breg_reg_6_               DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+Breg_reg_7_               DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+DP_OP_31J1_122_7992_U3    FA1D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.666000  mo, r
+DP_OP_31J1_122_7992_U4    FA1D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.666000  mo, r
+DP_OP_31J1_122_7992_U5    FA1D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.666000  mo, r
+DP_OP_31J1_122_7992_U6    FA1D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.666000  mo, r
+DP_OP_31J1_122_7992_U7    FA1D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.666000  mo, r
+DP_OP_31J1_122_7992_U8    FA1D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.666000  mo, r
+DP_OP_31J1_122_7992_U9    FA1D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.666000  mo, r
+DP_OP_31J1_122_7992_U10   FA1D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.666000  mo, r
+DP_OP_31J1_122_7992_U11   HA1D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.274000  mo, r
+DP_OP_31J1_122_7992_U51   HA1D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.274000  mo, r
+DP_OP_31J1_122_7992_U52   HA1D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.274000  mo, r
+DP_OP_31J1_122_7992_U53   HA1D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.274000  mo, r
+DP_OP_31J1_122_7992_U54   HA1D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.274000  mo, r
+DP_OP_31J1_122_7992_U55   HA1D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.274000  mo, r
+DP_OP_31J1_122_7992_U56   HA1D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.274000  mo, r
+U52                       INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U53                       INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U54                       INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U55                       INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U56                       INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U57                       AN3D2BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.588000  
+U58                       AN2D2BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U59                       AOI21D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U60                       NR2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U61                       TIELBWP7T35P140 tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U62                       AOI21D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U63                       DEL025D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U64                       INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U65                       NR2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U66                       AOI211D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U67                       NR2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U68                       INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U69                       OAI211D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U70                       INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U71                       NR2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U72                       XNR2D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.686000  
+U73                       NR2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U74                       INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U75                       NR2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U76                       ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U77                       NR2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U78                       AN2D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.392000  
+U79                       NR3D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.392000  
+U80                       ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U81                       INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U82                       NR2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U83                       NR3D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.392000  
+U84                       AN2D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.392000  
+U85                       AOI21D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U86                       ND3D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.392000  
+U87                       AN2D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.392000  
+U88                       AO21D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U89                       ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U90                       ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U91                       AOI22D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U92                       ND3D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.392000  
+U93                       ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U94                       ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U95                       AOI22D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U96                       ND3D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.392000  
+U97                       ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U98                       ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U99                       AOI22D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U100                      ND3D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.392000  
+U101                      ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U102                      ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U103                      AOI22D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U104                      ND3D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.392000  
+U105                      ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U106                      ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U107                      AOI21D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U108                      ND3D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.392000  
+U109                      INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U110                      INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U111                      INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U112                      INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U113                      INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U114                      INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U115                      INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U116                      MUX2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.686000  
+U117                      MUX2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.686000  
+U118                      MUX2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.686000  
+U119                      MUX2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.686000  
+U120                      MUX2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.686000  
+U121                      MUX2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.686000  
+U122                      AOI22D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U123                      INR2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.392000  
+U124                      AO222D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.882000  
+U125                      AO222D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.882000  
+U126                      ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U127                      ND3D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.392000  
+U128                      XOR2D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.686000  
+U129                      XOR2D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.686000  
+U130                      INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U131                      INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U132                      NR2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U133                      AO21D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U134                      AO21D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U135                      AO21D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.490000  
+U136                      ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U137                      AO22D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.686000  
+U138                      ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U139                      ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U140                      AO22D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.686000  
+U141                      ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+U142                      INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U143                      MOAI22D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.588000  
+U144                      INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U145                      MOAI22D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.588000  
+U146                      INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U147                      MOAI22D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.588000  
+U148                      INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U149                      MOAI22D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.588000  
+U150                      INVD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.196000  
+U151                      MOAI22D0BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.588000  
+U152                      ND2D1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          0.294000  
+cal_cnt_reg_0_            DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+cal_cnt_reg_1_            DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+cal_en_reg                DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+cal_en_regNext_reg        DFQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.666000  n
+clk_gate_Breg_reg         SNPS_CLOCK_GATE_HIGH_booth4_0   1.470000  b, cg, h
+clk_gate_shiftReg_reg     SNPS_CLOCK_GATE_HIGH_booth4_1   1.470000  b, cg, h
+shiftReg_reg_0_           DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+shiftReg_reg_1_           DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+shiftReg_reg_2_           DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+shiftReg_reg_3_           DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+shiftReg_reg_4_           DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+shiftReg_reg_5_           DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+shiftReg_reg_6_           DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+shiftReg_reg_7_           DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+shiftReg_reg_8_           DFCNQD1BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.862000  n
+shiftReg_reg_9_           DFCNQD2BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.960000  n
+shiftReg_reg_10_          DFCNQD2BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.960000  n
+shiftReg_reg_11_          DFCNQD2BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.960000  n
+shiftReg_reg_12_          DFCNQD2BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.960000  n
+shiftReg_reg_13_          DFCNQD2BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.960000  n
+shiftReg_reg_14_          DFCNQD2BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.960000  n
+shiftReg_reg_15_          DFCNQD2BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.960000  n
+shiftReg_reg_16_          DFCNQD2BWP7T35P140
+                                          tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs
+                                                          1.960000  n
+--------------------------------------------------------------------------------
+Total 147 cells                                           118.678000
+1

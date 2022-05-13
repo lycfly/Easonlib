@@ -1,0 +1,12 @@
+########################################################################
+
+# Created by write_link_library -target ptsh on Fri May 13 11:53:45 2022
+
+########################################################################
+
+# Recommended setting of $link_path:
+
+set link_path { * tcbn28hpcplusbwp7t35p140ssg0p81v125c_ccs.db gtech.db }
+
+
+set link_path_per_instance [list ]
