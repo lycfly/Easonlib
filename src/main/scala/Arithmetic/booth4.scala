@@ -110,7 +110,7 @@ object booth4_inst {
         resetActiveLevel = LOW),
       mode=Verilog,
       targetDirectory="rtl"
-      ).generate(new booth4(SIZEINA = 8, SIZEINB = 8))
+      ).generate(new booth4(SIZEINA = 20, SIZEINB = 10))
 
 
   }
@@ -119,8 +119,8 @@ object booth4_inst {
 object booth4_test{
   import scala.math._
   def main(args: Array[String]): Unit = {
-    val A = 10
-    val B = 19
+    val A = 6
+    val B = 4
     val testcase_coverage = 0.05
     SpinalConfig(
       defaultConfigForClockDomains = ClockDomainConfig(resetKind = ASYNC,
@@ -131,8 +131,8 @@ object booth4_test{
       ).generate(new booth4(SIZEINA = A, SIZEINB = B))
   var start_time = 0.0
   var end_time = 0.0
-  //val compiled = SimConfig.withWave.allOptimisation.compile(
-  val compiled = SimConfig.allOptimisation.compile(
+  val compiled = SimConfig.withWave.allOptimisation.compile(
+  //val compiled = SimConfig.allOptimisation.compile(
     rtl = new booth4(SIZEINA = A, SIZEINB = B))
   compiled.doSim { dut =>
     dut.clockDomain.forkStimulus(2)
