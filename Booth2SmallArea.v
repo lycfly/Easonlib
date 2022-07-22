@@ -1,8 +1,8 @@
-// Generator : SpinalHDL v1.6.1    git head : 3bf789d53b1b5a36974196e2d591342e15ddf28c
+// Generator : SpinalHDL v1.7.1    git head : 0444bb76ab1d6e19f0ec46bc03c4769776deb7d5
 // Component : Booth2SmallArea
-// Git hash  : 3663ba7d2e85ff08615a5459721c2d80dbec83b9
+// Git hash  : f17e5d6478b496071fee30b215c013ea1d1eb60a
 
-`timescale 1ns/1ps 
+`timescale 1ns/1ps
 
 module Booth2SmallArea (
   input               io_din_vld,

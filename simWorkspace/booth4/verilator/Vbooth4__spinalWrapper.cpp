@@ -7,7 +7,7 @@
 
 #include "Vbooth4.h"
 #ifdef TRACE
-#include "verilated_vcd_c.h"
+#include "verilated_???_c.h"
 #endif
 #include "Vbooth4__Syms.h"
 
@@ -161,7 +161,7 @@ public:
     Vbooth4 top;
     ISignalAccess *signalAccess[8];
     #ifdef TRACE
-	  VerilatedVcdC tfp;
+	  Verilated???C tfp;
 	  #endif
     string name;
 
@@ -172,18 +172,18 @@ public:
       lastFlushAt = high_resolution_clock::now();
       waveEnabled = true;
       signalAccess[0] = new CDataSignalAccess( top.io_din_vld );
-      signalAccess[1] = new CDataSignalAccess( top.io_dinA );
-      signalAccess[2] = new CDataSignalAccess( top.io_dinB );
+      signalAccess[1] = new SDataSignalAccess( top.io_dinA );
+      signalAccess[2] = new IDataSignalAccess( top.io_dinB );
       signalAccess[3] = new CDataSignalAccess( top.io_dout_vld );
       signalAccess[4] = new CDataSignalAccess( top.io_cal_finish );
-      signalAccess[5] = new SDataSignalAccess( top.io_dout );
+      signalAccess[5] = new IDataSignalAccess( top.io_dout );
       signalAccess[6] = new CDataSignalAccess( top.clk );
       signalAccess[7] = new CDataSignalAccess( top.reset );
 
       #ifdef TRACE
       Verilated::traceEverOn(true);
       top.trace(&tfp, 99);
-      tfp.open((std::string("/mnt/data/projects/kws/Easonlib/./simWorkspace/booth4/") + name + ".vcd").c_str());
+      tfp.open((std::string("/home/lyc/project/Easonlib/./simWorkspace/booth4/") + name + ".???").c_str());
       #endif
       this->name = name;
     }
@@ -198,7 +198,7 @@ public:
       tfp.close();
       #endif
       #ifdef COVERAGE
-      VerilatedCov::write((("/mnt/data/projects/kws/Easonlib/./simWorkspace/booth4/") + name + ".dat").c_str());
+      VerilatedCov::write((("/home/lyc/project/Easonlib/./simWorkspace/booth4/") + name + ".dat").c_str());
       #endif
     }
 

@@ -88,13 +88,13 @@ class Booth2SmallArea (SIZEINA: Int, SIZEINB:Int) extends Component {
 
 
     }
-    import DesignCompiler._
-    val dc_config = DesignCompiler_config(process = 28, freq = 100)
-    val dc = new DesignCompilerFlow(
-      design = new Booth2SmallArea(SIZEINA = 8, SIZEINB = 8),
-      topModuleName = "Booth2SmallArea",
-      workspacePath = "/mnt/mydata/Easonlib/syn/Booth2SmallArea",
-      DCConfig = dc_config,
-      designPath = ""
-    ).doit()
+    // import DesignCompiler._
+    // val dc_config = DesignCompiler_config(process = 28, freq = 100)
+    // val dc = new DesignCompilerFlow(
+    //   design = new Booth2SmallArea(SIZEINA = 8, SIZEINB = 8),
+    //   topModuleName = "Booth2SmallArea",
+    //   workspacePath = "/mnt/mydata/Easonlib/syn/Booth2SmallArea",
+    //   DCConfig = dc_config,
+    //   designPath = ""
+    // ).doit()
   }

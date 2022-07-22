@@ -1,19 +1,19 @@
-// Generator : SpinalHDL v1.7.0    git head : eca519e78d4e6022e34911ec300a432ed9db8220
+// Generator : SpinalHDL v1.7.1    git head : 0444bb76ab1d6e19f0ec46bc03c4769776deb7d5
 // Component : booth4
-// Git hash  : 6bea6bb7df6fd9185f6024fe72178a5f7d526d6e
+// Git hash  : f17e5d6478b496071fee30b215c013ea1d1eb60a
 
 `timescale 1ns/1ps
 
 module booth4 (
-  input               io_din_vld,
-  input      [7:0]    io_dinA,
-  input      [7:0]    io_dinB,
-  output              io_dout_vld,
-  output              io_cal_finish,
-  output     [15:0]   io_dout,
-  input               clk,
-  input               resetn
-);
+    input               io_din_vld, //! inputs
+    input      [7:0]    io_dinA,
+    input      [7:0]    io_dinB,
+    output              io_dout_vld,
+    output              io_cal_finish,
+    output     [15:0]   io_dout,
+    input               clk,
+    input               resetn
+  );
 
   wire       [18:0]   _zz_aftershift;
   wire       [18:0]   _zz_aftershift_1;
@@ -52,21 +52,27 @@ module booth4 (
   assign Minus2B = ($signed(shiftReg_high) + $signed(Negative2B));
   assign cal_cnt_ov_flag = (cal_cnt == 2'b11);
   assign io_cal_finish = (cal_cnt_ov_flag && cal_en);
-  always @(*) begin
+  always @(*)
+  begin : test
     case(flag_bits)
-      3'b000, 3'b111 : begin
+      3'b000, 3'b111 :
+      begin
         beforeshift = shiftReg_high;
       end
-      3'b001, 3'b010 : begin
+      3'b001, 3'b010 :
+      begin
         beforeshift = AddB;
       end
-      3'b101, 3'b110 : begin
+      3'b101, 3'b110 :
+      begin
         beforeshift = MinusB;
       end
-      3'b011 : begin
+      3'b011 :
+      begin
         beforeshift = Add2B;
       end
-      default : begin
+      default :
+      begin
         beforeshift = Minus2B;
       end
     endcase
@@ -75,39 +81,56 @@ module booth4 (
   assign aftershift = _zz_aftershift;
   assign io_dout_vld = ((! cal_en) && cal_en_regNext);
   assign io_dout = shiftReg[16 : 1];
-  always @(posedge clk or negedge resetn) begin
-    if(!resetn) begin
+  always @(posedge clk or negedge resetn)
+  begin
+    if(!resetn)
+    begin
       Breg <= 8'h0;
       shiftReg <= 19'h0;
       cal_cnt <= 2'b00;
       cal_en <= 1'b0;
-    end else begin
-      if(io_din_vld) begin
+    end
+    else
+    begin
+      if(io_din_vld)
+      begin
         cal_en <= 1'b1;
-      end else begin
-        if(cal_cnt_ov_flag) begin
+      end
+      else
+      begin
+        if(cal_cnt_ov_flag)
+        begin
           cal_en <= 1'b0;
         end
       end
-      if(cal_en) begin
+      if(cal_en)
+      begin
         cal_cnt <= (cal_cnt + 2'b01);
-      end else begin
-        if(io_din_vld) begin
+      end
+      else
+      begin
+        if(io_din_vld)
+        begin
           cal_cnt <= 2'b00;
         end
       end
-      if(io_din_vld) begin
+      if(io_din_vld)
+      begin
         shiftReg <= {{10'h0,io_dinA},1'b0};
         Breg <= io_dinB;
-      end else begin
-        if(cal_en) begin
+      end
+      else
+      begin
+        if(cal_en)
+        begin
           shiftReg <= aftershift;
         end
       end
     end
   end
 
-  always @(posedge clk) begin
+  always @(posedge clk)
+  begin
     cal_en_regNext <= cal_en;
   end
 

@@ -2,15 +2,15 @@
     "version": "1.4.0",
     "project": {
         "name": "easonlib-build",
-        "directory": "/mnt/data/projects/kws/Easonlib/project",
-        "workspaceDir": "/mnt/data/projects/kws/Easonlib/project",
+        "directory": "/home/lyc/project/Easonlib/project",
+        "workspaceDir": "/home/lyc/project/Easonlib/project",
         "sources": [
-            "/mnt/data/projects/kws/Easonlib/project/src/main/scala",
-            "/mnt/data/projects/kws/Easonlib/project/src/main/scala-2.12",
-            "/mnt/data/projects/kws/Easonlib/project/src/main/scala-2",
-            "/mnt/data/projects/kws/Easonlib/project/src/main/java",
-            "/mnt/data/projects/kws/Easonlib/project/src/main/scala-sbt-1.0",
-            "/mnt/data/projects/kws/Easonlib/project/target/scala-2.12/sbt-1.0/src_managed/main"
+            "/home/lyc/project/Easonlib/project/src/main/scala",
+            "/home/lyc/project/Easonlib/project/src/main/scala-2.12",
+            "/home/lyc/project/Easonlib/project/src/main/scala-2",
+            "/home/lyc/project/Easonlib/project/src/main/java",
+            "/home/lyc/project/Easonlib/project/src/main/scala-sbt-1.0",
+            "/home/lyc/project/Easonlib/project/target/scala-2.12/sbt-1.0/src_managed/main"
         ],
         "dependencies": [
             
@@ -18,7 +18,7 @@
         "classpath": [
             "/home/lyc/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/sbt/1.5.6/sbt-1.5.6.jar",
             "/home/lyc/.sbt/boot/scala-2.12.14/lib/scala-library.jar",
-            "/home/lyc/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.5.0/sbt-bloop-1.5.0.jar",
+            "/home/lyc/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.5.2/sbt-bloop-1.5.2.jar",
             "/home/lyc/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.5.6/main_2.12-1.5.6.jar",
             "/home/lyc/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/io_2.12/1.5.1/io_2.12-1.5.1.jar",
             "/home/lyc/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.5.0/jna-5.5.0.jar",
@@ -105,11 +105,11 @@
             "/home/lyc/.cache/coursier/v1/https/repo1.maven.org/maven2/com/squareup/okio/okio/1.17.2/okio-1.17.2.jar",
             "/home/lyc/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.3.3/config-1.3.3.jar"
         ],
-        "out": "/mnt/data/projects/kws/Easonlib/project/.bloop/easonlib-build",
-        "classesDir": "/mnt/data/projects/kws/Easonlib/project/.bloop/easonlib-build/scala-2.12/sbt-1.0/classes",
+        "out": "/home/lyc/project/Easonlib/project/.bloop/easonlib-build",
+        "classesDir": "/home/lyc/project/Easonlib/project/.bloop/easonlib-build/scala-2.12/sbt-1.0/classes",
         "resources": [
-            "/mnt/data/projects/kws/Easonlib/project/src/main/resources",
-            "/mnt/data/projects/kws/Easonlib/project/target/scala-2.12/sbt-1.0/resource_managed/main"
+            "/home/lyc/project/Easonlib/project/src/main/resources",
+            "/home/lyc/project/Easonlib/project/target/scala-2.12/sbt-1.0/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -122,11 +122,11 @@
             ],
             "jars": [
                 "/home/lyc/.sbt/boot/scala-2.12.14/lib/scala-library.jar",
-                "/home/lyc/.sbt/boot/scala-2.12.14/lib/scala-compiler.jar",
-                "/home/lyc/.sbt/boot/scala-2.12.14/lib/scala-reflect.jar",
-                "/home/lyc/.sbt/boot/scala-2.12.14/lib/jline.jar",
+                "/home/lyc/.sbt/boot/scala-2.12.14/lib/scala-xml_2.12.jar",
                 "/home/lyc/.sbt/boot/scala-2.12.14/lib/jansi.jar",
-                "/home/lyc/.sbt/boot/scala-2.12.14/lib/scala-xml_2.12.jar"
+                "/home/lyc/.sbt/boot/scala-2.12.14/lib/jline.jar",
+                "/home/lyc/.sbt/boot/scala-2.12.14/lib/scala-compiler.jar",
+                "/home/lyc/.sbt/boot/scala-2.12.14/lib/scala-reflect.jar"
             ],
             "setup": {
                 "order": "mixed",
@@ -202,7 +202,7 @@
             "config": {
                 "home": "/usr/local/jdk1.8/jre",
                 "options": [
-                    "-Duser.dir=/mnt/data/projects/kws/Easonlib/project"
+                    "-Duser.dir=/home/lyc/project/Easonlib/project"
                 ]
             },
             "mainClass": [
@@ -214,17 +214,17 @@
                 {
                     "organization": "ch.epfl.scala",
                     "name": "sbt-bloop",
-                    "version": "1.5.0",
+                    "version": "1.5.2",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "sbt-bloop",
-                            "path": "/home/lyc/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.5.0/sbt-bloop-1.5.0.jar"
+                            "path": "/home/lyc/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.5.2/sbt-bloop-1.5.2.jar"
                         },
                         {
                             "name": "sbt-bloop",
                             "classifier": "sources",
-                            "path": "/home/lyc/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.5.0/sbt-bloop-1.5.0-sources.jar"
+                            "path": "/home/lyc/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.5.2/sbt-bloop-1.5.2-sources.jar"
                         }
                     ]
                 },
